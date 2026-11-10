@@ -22,13 +22,18 @@
 
 #include "util/Ptree.h"
 
+#include <stdexcept>
+#include <string>
+
 namespace stride {
 
 using namespace std;
 using namespace stride::ContactType;
 using namespace stride::util;
 
-AgeContactProfile::AgeContactProfile(Id poolType, const ptree& contactPt) : std::array<double, MaximumAge() + 1>()
+namespace {
+
+string GetContactTypeKey(Id poolType)
 {
         string typeKey = "";
         // TODO Eliminate this switch by fixing the data file
@@ -47,14 +52,54 @@ AgeContactProfile::AgeContactProfile(Id poolType, const ptree& contactPt) : std:
         } else if (poolType == Id::Collectivity) {
          		typeKey = "collectivity";
         }
+        return typeKey;
+}
 
-        // allow to provide an adjustment factor for the contact rates
+string GetContactTypeKey(ERGMContactType::Id poolType)
+{
+        string typeKey = "";
+        // TODO Eliminate this switch by fixing the data file
+        if (poolType == ERGMContactType::Id::Weekday_2) {
+                typeKey = "ergm_weekday_2";
+        } else if (poolType == ERGMContactType::Id::Weekday_3) {
+                typeKey = "ergm_weekday_3";
+        } else if (poolType == ERGMContactType::Id::Weekday_4) {
+                typeKey = "ergm_weekday_4";
+        } else if (poolType == ERGMContactType::Id::Weekday_5) {
+                typeKey = "ergm_weekday_5";
+        } else if (poolType == ERGMContactType::Id::Weekday_6) {
+                typeKey = "ergm_weekday_6";
+        } else if (poolType == ERGMContactType::Id::Weekend_2) {
+                typeKey = "ergm_weekend_2";
+        } else if (poolType == ERGMContactType::Id::Weekend_3) {
+                typeKey = "ergm_weekend_3";
+        } else if (poolType == ERGMContactType::Id::Weekend_4) {
+                typeKey = "ergm_weekend_4";
+        } else if (poolType == ERGMContactType::Id::Weekend_5) {
+                typeKey = "ergm_weekend_5";
+        } else if (poolType == ERGMContactType::Id::Weekend_6) {
+                typeKey = "ergm_weekend_6";
+        }
+        return typeKey;
+}
+
+double GetContactRateAdjustment(const string& typeKey, const ptree& contactPt)
+{
         double contactRateAdjustment = 1.0;
         const string key_adj{string("matrices.adjustment_factor.").append(typeKey).append(".value")};
         if (const auto val = contactPt.get_optional<double>(key_adj)) {
                 contactRateAdjustment = *val;
                 cerr << "UPDATE: the contact adjustment factor for " << key_adj << ": " << contactRateAdjustment << endl;
         }
+        return contactRateAdjustment;
+}
+
+} // namespace
+
+AgeContactProfile::AgeContactProfile(Id poolType, const ptree& contactPt) : std::array<double, MaximumAge() + 1>()
+{
+        const string typeKey = GetContactTypeKey(poolType);
+        const double contactRateAdjustment = GetContactRateAdjustment(typeKey, contactPt);
 
         // construct XML key for contact rates
         const string key{string("matrices.").append(typeKey)};
@@ -70,6 +115,37 @@ AgeContactProfile::AgeContactProfile(Id poolType, const ptree& contactPt) : std:
 					(*this)[i++] = totalContacts * contactRateAdjustment;
 			}
 
+        } else {
+                cerr << "WARNING: the contact data does not contain '" << key << "', assuming contact rate == 0" << endl;
+        }
+}
+
+AgeContactProfileERGM::AgeContactProfileERGM(ERGMContactType::Id poolType, const ptree& contactPt)
+    : std::array<std::array<double, RoleCategory() + 1>, RoleCategory() + 1>()
+{
+        const string typeKey = GetContactTypeKey(poolType);
+        const double contactRateAdjustment = GetContactRateAdjustment(typeKey, contactPt);
+        const string key{string("matrices.").append(typeKey)};
+
+        if (contactPt.get_optional<std::string>(key).has_value()) {
+                size_t participantIndex = 1U;
+                for (const auto& participant : contactPt.get_child(key)) {
+                        if (participantIndex >= size()) {
+                                throw std::runtime_error("AgeContactProfileERGM> too many participant rows in '" +
+                                                         key + "'");
+                        }
+                        size_t contactIndex = 1U;
+                        for (const auto& contact : participant.second.get_child("contacts")) {
+                                if (contactIndex >= (*this)[participantIndex].size()) {
+                                        throw std::runtime_error(
+                                            "AgeContactProfileERGM> too many contacts in row " +
+                                            std::to_string(participantIndex) + " of '" + key + "'");
+                                }
+                                (*this)[participantIndex][contactIndex++] =
+                                    contact.second.get<double>("rate") * contactRateAdjustment;
+                        }
+                        ++participantIndex;
+                }
         } else {
                 cerr << "WARNING: the contact data does not contain '" << key << "', assuming contact rate == 0" << endl;
         }

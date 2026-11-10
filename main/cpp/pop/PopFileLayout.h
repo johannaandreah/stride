@@ -31,6 +31,7 @@ struct PopRecord
 {
         unsigned int person_id          = 0U;
         unsigned int age                = 0U;
+        unsigned int sex                = 0U;
         unsigned int profession         = 0U;
         unsigned int household          = 0U;
         unsigned int school             = 0U;
@@ -59,6 +60,7 @@ public:
         enum class Field
         {
                 Age,
+                Sex,
                 PersonId,
                 Profession,
                 Household,

@@ -28,6 +28,7 @@ namespace stride {
 
 class ContactPool;
 class AgeContactProfile;
+class AgeContactProfileERGM;
 class TransmissionProfile;
 class Population;
 
@@ -39,6 +40,7 @@ class Rn;
 
 /// For use in the InfectorMap and Sim; executes infector.
 typedef void(InfectorExec)(ContactPool& pool, const AgeContactProfile& profile,
+                           const AgeContactProfileERGM* ergm_profile,
                            const TransmissionProfile& trans_profile, util::Rn& rn,
                            unsigned short int sim_day, std::shared_ptr<spdlog::logger> event_logger,
 						   std::shared_ptr<Population> population, double m_cnt_intensity_householdCluster,

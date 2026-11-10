@@ -28,4 +28,6 @@ namespace stride {
 
 using AgeContactProfiles = ContactType::IdSubscriptArray<AgeContactProfile>;
 
+using AgeContactProfilesERGM = ERGMContactType::IdSubscriptArray<AgeContactProfileERGM>;
+
 } // namespace stride

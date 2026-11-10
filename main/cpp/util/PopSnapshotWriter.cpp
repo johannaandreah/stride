@@ -148,6 +148,7 @@ void PopSnapshotWriter::WritePopulationSnapshot(const stride::util::ptree& confi
         const auto        layout         = PopFileLayout::FromFirstLine(headerLine);
         const std::string sep            = layout.Separator();
         const bool        hasPersonId    = layout.Has(Field::PersonId);
+        const bool        hasSex         = layout.Has(Field::Sex);
         const bool        hasProfession  = layout.Has(Field::Profession);
         const bool hasHouseholdClusterId = layout.Has(Field::HouseholdCluster);
         const bool hasCollectivityId     = layout.Has(Field::Collectivity);
@@ -159,6 +160,9 @@ void PopSnapshotWriter::WritePopulationSnapshot(const stride::util::ptree& confi
         std::ofstream csvFile(path.string());
 
         csvFile << "age" << sep;
+        if (hasSex) {
+                csvFile << "sex" << sep;
+        }
         if (hasPersonId) {
                 csvFile << "person_id" << sep;
         }
@@ -177,6 +181,9 @@ void PopSnapshotWriter::WritePopulationSnapshot(const stride::util::ptree& confi
 
         for (const auto& p : *pop) {
                 csvFile << static_cast<int>(p.GetAge()) << sep;
+                if (hasSex) {
+                        csvFile << p.GetSex() << sep;
+                }
                 if (hasPersonId) {
                         csvFile << p.GetId() << sep;
                 }

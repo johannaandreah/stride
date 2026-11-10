@@ -106,6 +106,9 @@ private:
 
         PublicHealthAgency          m_public_health_agency;
         std::shared_ptr<SurveyManager>   m_survey_manager;
+
+        bool                        m_use_ergm_contact_matrix; ///< Use ERGM contact matrix for contact generation
+        AgeContactProfilesERGM      m_ergm_contact_profiles; ///< Contact profile for ERGM household contact matrix
 };
 
 } // namespace stride

@@ -41,4 +41,18 @@ public:
         AgeContactProfile(ContactType::Id poolType, const stride::util::ptree& contactPt);
 };
 
+/**
+ * Contact rates by participant row and contact-entry column.
+ */
+class AgeContactProfileERGM
+    : public std::array<std::array<double, RoleCategory() + 1>, RoleCategory() + 1>
+{
+public:
+        /// Need to keep the default constructor available.
+        AgeContactProfileERGM() = default;
+
+        /// Explicitly initialize
+        AgeContactProfileERGM(ERGMContactType::Id poolType, const stride::util::ptree& contactPt);
+};
+
 } // namespace stride

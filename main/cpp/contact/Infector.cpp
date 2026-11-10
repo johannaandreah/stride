@@ -21,6 +21,7 @@
 #include "Infector.h"
 
 #include "ContactPool.h"
+#include "pop/Age.h"
 #include "pop/Person.h"
 #include <iostream>
 #include <cmath>
@@ -209,6 +210,7 @@ using namespace stride::ContactType;
 using namespace stride::util;
 
 inline double GetContactProbability(const AgeContactProfile& profile, const Person* p1, const Person* p2,
+		const AgeContactProfileERGM* ergmProfile,
 		size_t pool_size, const ContactType::Id pType, 
 		std::shared_ptr<Population>& population, double cnt_intensity_householdCluster, double pType_distancing_factor,
 		unsigned int venue_contacts_p1, unsigned int venue_contacts_p2,
@@ -288,15 +290,20 @@ inline double GetContactProbability(const AgeContactProfile& profile, const Pers
 
 
    	    // limit probability to 0.999
-        if (contact_probability >= 1) {
-        	contact_probability = 0.999;
-        }
-
-
-    	// assume fully connected households
+        // Use the role-specific ERGM probability for households when supplied.
 		if(pType == Id::Household){
-			contact_probability = 0.999;
+                if (ergmProfile != nullptr) {
+                        const auto role1 = HouseholdRole(static_cast<unsigned int>(p1->GetAge()), p1->GetSex());
+                        const auto role2 = HouseholdRole(static_cast<unsigned int>(p2->GetAge()), p2->GetSex());
+                        contact_probability = (*ergmProfile)[role1][role2] * cnt_adjustment_factor;
+                } else {
+                        contact_probability = 0.999;
+                }
 		}
+
+        if (contact_probability >= 1) {
+                contact_probability = 0.999;
+        }
 
 		// exclude contacts with household members within household cluster
 		if(pType == Id::HouseholdCluster){
@@ -334,6 +341,7 @@ using namespace stride::util;
 //-------------------------------------------------------------------------------------------------
 template <EventLogMode::Id LL, bool TO>
 void Infector<LL, TO>::Exec(ContactPool& pool, const AgeContactProfile& profile,
+                                 const AgeContactProfileERGM* ergmProfile,
                                  const TransmissionProfile& transProfile, util::Rn& rn,
                                  unsigned short int simDay, shared_ptr<spdlog::logger> eventLogger,
 								 std::shared_ptr<Population> population, double m_cnt_intensity_householdCluster,
@@ -372,7 +380,7 @@ void Infector<LL, TO>::Exec(ContactPool& pool, const AgeContactProfile& profile,
                                 continue;
                         }
                         // check for contact
-                        const double cProb = GetContactProbability(profile, p1, p2, pSize, pType, 
+                        const double cProb = GetContactProbability(profile, p1, p2, ergmProfile, pSize, pType,
 								population,m_cnt_intensity_householdCluster,pType_distancing_factor,
 								pool.GetMemberContacts(i_person1), pool.GetMemberContacts(i_person2),
 								contact_probability_rule);
@@ -504,6 +512,7 @@ void Infector<LL, TO>::Exec(ContactPool& pool, const AgeContactProfile& profile,
 //-------------------------------------------------------------------------------------------
 template <EventLogMode::Id LL>
 void Infector<LL, true>::Exec(ContactPool& pool, const AgeContactProfile& profile,
+                                   const AgeContactProfileERGM* ergmProfile,
                                    const TransmissionProfile& transProfile, util::Rn& rn,
                                    unsigned short int simDay, shared_ptr<spdlog::logger> eventLogger,
 								   std::shared_ptr<Population> population, double m_cnt_intensity_householdCluster,
@@ -551,7 +560,7 @@ void Infector<LL, true>::Exec(ContactPool& pool, const AgeContactProfile& profil
                                 if (!p2->IsInPool(pType)) {
                                         continue;
                                 }
-                                const double cProb_p1 = GetContactProbability(profile, p1, p2, pSize, pType,
+                                const double cProb_p1 = GetContactProbability(profile, p1, p2, ergmProfile, pSize, pType,
 															population, m_cnt_intensity_householdCluster, pType_distancing_factor,
 															pool.GetMemberContacts(i_infected), pool.GetMemberContacts(i_contact),
 															contact_probability_rule);

@@ -30,6 +30,7 @@
 #include "util/StringUtils.h"
 
 #include <omp.h>
+#include <algorithm>
 #include <utility>
 
 namespace stride {
@@ -139,16 +140,26 @@ void Sim::TimeStep()
 
 #pragma omp for schedule(static)
 					for (size_t i = 1; i < poolSys.RefPools(typ).size(); i++) { // NOLINT                 
+                        const auto& pool = poolSys.RefPools(typ)[i];
                         if (typ == ContactType::Id::OtherHouse || typ == ContactType::Id::RestoCafe || typ == ContactType::Id::OtherPlace || typ == ContactType::Id::Transport) {
-                            const auto day_week_pool = poolSys.RefPools(typ)[i].GetDayWeek();
+                            const auto day_week_pool = pool.GetDayWeek();
                             if (day_week_pool != dayWeek){
                                 continue;
                             }
                         }
                             // enable ContactPool specific physical distancing
-						double typ_distancing_factor = m_calendar->GetDistancingFactor(poolSys.RefPools(typ)[i]);
+						double typ_distancing_factor = m_calendar->GetDistancingFactor(pool);
 
-                            infector(poolSys.RefPools(typ)[i], m_contact_profiles[typ], m_transmission_profile,
+                        const AgeContactProfileERGM* ergmProfile = nullptr;
+                        if (m_use_ergm_contact_matrix && typ == ContactType::Id::Household && pool.size() > 1U) {
+                                const bool isWeekend = dayWeek == 0U || dayWeek == 6U;
+                                const size_t householdSize = min(pool.size(), size_t{6U});
+                                const size_t profileOffset = (isWeekend ? 5U : 0U) + householdSize - 2U;
+                                const auto profileId = static_cast<ERGMContactType::Id>(profileOffset);
+                                ergmProfile = &m_ergm_contact_profiles[profileId];
+                        }
+
+                            infector(poolSys.RefPools(typ)[i], m_contact_profiles[typ], ergmProfile, m_transmission_profile,
 									 m_rn_man_ptr->at(thread_num), simDay, eventLogger,
 									 m_population, cnt_intensity_householdCluster, typ_distancing_factor, dayWeek, m_airborne_transmission, m_subpools_community, ventilation_factor,
 									 m_contact_probability_rule);

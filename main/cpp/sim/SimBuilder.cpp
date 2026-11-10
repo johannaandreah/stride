@@ -36,6 +36,9 @@
 #include "util/FileSys.h"
 #include "util/RnMan.h"
 
+#include <algorithm>
+#include <iomanip>
+#include <iostream>
 #include <stdexcept>
 
 namespace stride {
@@ -44,6 +47,29 @@ using namespace std;
 using namespace stride::util;
 using namespace ContactType;
 
+namespace {
+
+void PrintERGMContactProfiles(const AgeContactProfilesERGM& profiles)
+{
+        for (const auto id : ERGMContactType::IdList) {
+                const auto& matrix = profiles[id];
+                cout << "ERGM contact profile " << ERGMContactType::ToString(id) << ":\n"
+                     << "participant\\contact";
+                for (unsigned int column = 0; column <= RoleCategory(); ++column) {
+                        cout << setw(12) << column;
+                }
+                for (unsigned int row = 0; row <= RoleCategory(); ++row) {
+                        cout << '\n' << setw(19) << row;
+                        for (unsigned int column = 0; column <= RoleCategory(); ++column) {
+                                cout << setw(12) << matrix[row][column];
+                        }
+                }
+                cout << '\n';
+        }
+}
+
+} // namespace
+
 SimBuilder::SimBuilder(const ptree& config) : m_config(config) {}
 
 shared_ptr<Sim> SimBuilder::Build(shared_ptr<Sim> sim, shared_ptr<Population> pop)
@@ -51,10 +77,10 @@ shared_ptr<Sim> SimBuilder::Build(shared_ptr<Sim> sim, shared_ptr<Population> po
 
         // --------------------------------------------------------------
         // Read config info and setup random number manager
-        // --------------------------------------------------------------
+		// --------------------------------------------------------------
 		std::cout << "Read config info and setup random number manager" << std::endl;
-        sim->m_config                        = m_config;
-        sim->m_population                    = std::move(pop);
+		sim->m_config                        = m_config;
+		sim->m_population                    = std::move(pop);
         // Tombstone: track_index_case was removed (plan F11 / Phase 0b). The ptree silently
         // ignores unknown keys, so a configuration that still sets it true would otherwise
         // run WITHOUT the feature and produce quietly wrong results.
@@ -105,10 +131,20 @@ shared_ptr<Sim> SimBuilder::Build(shared_ptr<Sim> sim, shared_ptr<Population> po
         std::cout << "Initialize the age-related contact profiles." << std::endl;
         const auto ageContactPt = FileSys::ReadPtreeFile(m_config.get<string>("run.age_contact_matrix_file", "data/contact_matrix.xml"));
         for (Id typ : IdList) {
-                if (typ != Id::OtherHouse && typ != Id::RestoCafe && typ != Id::OtherPlace && typ != Id::Transport){
+                if (typ != Id::OtherHouse && typ != Id::RestoCafe && typ != Id::OtherPlace && typ != Id::Transport) {
                 sim->m_contact_profiles[typ] = AgeContactProfile(typ, ageContactPt);
                 }
         }
+        sim->m_use_ergm_contact_matrix   =   m_config.get<bool>("run.use_ergm_contact_matrix", false);
+        if(sim->m_use_ergm_contact_matrix){
+        	std::cout << "Use ERGM contact matrix for contact generation" << std::endl;
+            const auto ageContactPtERGM = FileSys::ReadPtreeFile(m_config.get<string>("run.age_contact_matrix_file_ergm", "data/contact_matrix_ergm.xml"));
+            for (ERGMContactType::Id typ : ERGMContactType::IdList) {
+                sim->m_ergm_contact_profiles[typ] = AgeContactProfileERGM(typ, ageContactPtERGM);
+            }
+            PrintERGMContactProfiles(sim->m_ergm_contact_profiles);
+        }
+        
 
 
         // --------------------------------------------------------------
@@ -147,7 +183,7 @@ shared_ptr<Sim> SimBuilder::Build(shared_ptr<Sim> sim, shared_ptr<Population> po
         sim->m_public_health_agency.Initialize(m_config);
         sim->m_is_isolated_from_household = m_config.get<bool>("run.is_isolated_from_household",false);
 
-
+        
         // --------------------------------------------------------------
         // Seed population with survey participants.
         // --------------------------------------------------------------

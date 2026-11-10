@@ -83,4 +83,45 @@ constexpr IdPack_t IdPack;
 constexpr std::initializer_list<Id> IdList = IdPack_t::AsInitializerList;
 
 } // namespace ContactType
+
+namespace ERGMContactType {
+
+enum class Id : unsigned int
+{
+        Weekday_2 = static_cast<unsigned int>(0), // Needs to be zero.
+        Weekday_3,
+        Weekday_4,
+        Weekday_5,
+        Weekday_6,
+        Weekend_2,
+        Weekend_3,
+        Weekend_4,
+        Weekend_5,
+        Weekend_6
+};
+
+inline constexpr unsigned int NumOfTypes() { return 10U; }
+
+bool IsId(const std::string& s);
+
+Id ToId(const std::string& s);
+
+inline constexpr std::size_t ToSizeT(Id id) { return static_cast<std::size_t>(id); }
+
+std::string ToString(Id id);
+
+template <Id... ids>
+struct IDPack
+{
+        constexpr static std::initializer_list<Id> AsInitializerList = {ids...}; ///< Exposed as std::initializer_list
+};
+
+using IdPack_t = IDPack<Id::Weekday_2, Id::Weekday_3, Id::Weekday_4, Id::Weekday_5, Id::Weekday_6,
+                        Id::Weekend_2, Id::Weekend_3, Id::Weekend_4, Id::Weekend_5, Id::Weekend_6>;
+
+constexpr IdPack_t IdPack;
+constexpr std::initializer_list<Id> IdList = IdPack_t::AsInitializerList;
+
+
+} // namespace ERGMContactType
 } // namespace stride

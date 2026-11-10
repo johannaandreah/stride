@@ -90,7 +90,7 @@ shared_ptr<Population> PopBuilder::MakePersons(shared_ptr<Population> pop)
     unsigned int default_person_id = 0U;
     const auto   add_person        = [&](const string& row) {
         const auto r = layout.Parse(row, default_person_id);
-        pop->CreatePerson(r.person_id, r.age, r.profession, r.household, r.school, r.workplace,
+        pop->CreatePerson(r.person_id, r.age, r.sex, r.profession, r.household, r.school, r.workplace,
                           r.community_weekend, r.community_weekday, r.household_cluster, r.collectivity);
         ++default_person_id;
     };

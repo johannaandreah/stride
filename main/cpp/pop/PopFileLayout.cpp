@@ -43,6 +43,7 @@ string CleanName(const string& s) { return ToLower(Trim(Trim(s, " \t\r\n"), "\""
 const map<string, Field>& NameTable()
 {
         static const map<string, Field> table{{"age", Field::Age},
+                                              {"sex", Field::Sex},
                                               {"person_id", Field::PersonId},
                                               {"worker", Field::Profession},
                                               {"profession", Field::Profession},
@@ -86,6 +87,7 @@ string PopFileLayout::FieldName(Field f)
 {
         switch (f) {
         case Field::Age: return "age";
+        case Field::Sex: return "sex";
         case Field::PersonId: return "person_id";
         case Field::Profession: return "worker";
         case Field::Household: return "household_id";
@@ -220,6 +222,7 @@ PopRecord PopFileLayout::Parse(const string& line, unsigned int defaultPersonId)
 
         PopRecord r;
         r.age               = get(Field::Age);
+        r.sex               = get(Field::Sex);
         r.person_id         = Has(Field::PersonId) ? get(Field::PersonId) : defaultPersonId;
         r.profession        = get(Field::Profession);
         r.household         = get(Field::Household);

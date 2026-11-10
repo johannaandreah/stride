@@ -109,4 +109,71 @@ string ToString(Id c)
 }
 
 } // namespace ContactType
+
+namespace ERGMContactType {
+
+using namespace std;
+
+bool IsId(const string& s)
+{
+       static const map<string, Id> ids{
+           {"WEEKDAY_2", Id::Weekday_2},
+           {"WEEKDAY_3", Id::Weekday_3},
+           {"WEEKDAY_4", Id::Weekday_4},
+           {"WEEKDAY_5", Id::Weekday_5},
+           {"WEEKDAY_6", Id::Weekday_6},
+           {"WEEKEND_2", Id::Weekend_2},
+           {"WEEKEND_3", Id::Weekend_3},
+           {"WEEKEND_4", Id::Weekend_4},
+           {"WEEKEND_5", Id::Weekend_5},
+           {"WEEKEND_6", Id::Weekend_6}
+       };
+       return ids.count(util::ToUpper(s)) == 1;
+}
+
+Id ToId(const string& s)
+{
+       static const map<string, Id> ids{
+           {"WEEKDAY_2", Id::Weekday_2},
+           {"WEEKDAY_3", Id::Weekday_3},
+           {"WEEKDAY_4", Id::Weekday_4},
+           {"WEEKDAY_5", Id::Weekday_5},
+           {"WEEKDAY_6", Id::Weekday_6},
+           {"WEEKEND_2", Id::Weekend_2},
+           {"WEEKEND_3", Id::Weekend_3},
+           {"WEEKEND_4", Id::Weekend_4},
+           {"WEEKEND_5", Id::Weekend_5},
+           {"WEEKEND_6", Id::Weekend_6}
+       };
+       const string key = util::ToUpper(s);
+       const auto it = ids.find(key);
+       if (it == ids.end()) {
+               throw runtime_error("ERGMContactType::ToId> not available: " + s);
+       }
+       return it->second;
+}
+
+string ToString(Id id)
+{
+       static const map<Id, string> names{
+           {Id::Weekday_2, "Weekday_2"},
+           {Id::Weekday_3, "Weekday_3"},
+           {Id::Weekday_4, "Weekday_4"},
+           {Id::Weekday_5, "Weekday_5"},
+           {Id::Weekday_6, "Weekday_6"},
+           {Id::Weekend_2, "Weekend_2"},
+           {Id::Weekend_3, "Weekend_3"},
+           {Id::Weekend_4, "Weekend_4"},
+           {Id::Weekend_5, "Weekend_5"},
+           {Id::Weekend_6, "Weekend_6"}
+       };
+       const auto it = names.find(id);
+       if (it == names.end()) {
+               throw runtime_error("ERGMContactType::ToString> id not available");
+       }
+       return it->second;
+}
+
+} // namespace ERGMContactType
+
 } // namespace stride

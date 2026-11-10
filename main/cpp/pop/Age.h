@@ -31,4 +31,28 @@ inline constexpr unsigned int MinAdultAge() { return 18U; }
 /// Effective age (topping of at maximum).
 inline unsigned int EffectiveAge(unsigned int age) { return (age <= MaximumAge()) ? age : MaximumAge(); }
 
+/// Maximum role (age/gender) category for ERGM household contact matrix.
+inline constexpr unsigned int RoleCategory() { return 7U;}
+
+/// Household role from age and sex; returns 0 when sex is not recognized for ages 25-60.
+inline constexpr unsigned int HouseholdRole(unsigned int age, unsigned int sex)
+{
+        if (age <= 5U) {
+                return 1U;
+        }
+        if (age <= 12U) {
+                return 2U;
+        }
+        if (age <= 18U) {
+                return 3U;
+        }
+        if (age <= 24U) {
+                return 4U;
+        }
+        if (age <= 60U) {
+                return sex == 2U ? 5U : sex == 1U ? 6U : 0U;
+        }
+        return 7U;
+}
+
 } // namespace stride

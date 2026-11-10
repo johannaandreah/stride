@@ -193,4 +193,47 @@ public:
 };
 
 } // namespace ContactType
+
+namespace ERGMContactType {
+
+template <class T>
+class IdSubscriptArray : public std::array<T, NumOfTypes()>
+{
+public:
+        IdSubscriptArray() : std::array<T, NumOfTypes()>{}
+        {
+                for (const auto id : IdList) {
+                        (*this)[id] = T();
+                }
+        }
+
+        typename std::array<T, NumOfTypes()>::reference operator[](Id id)
+        {
+                return static_cast<std::array<T, NumOfTypes()>&>(*this)[ToSizeT(id)];
+        }
+
+        typename std::array<T, NumOfTypes()>::const_reference operator[](Id id) const
+        {
+                return static_cast<const std::array<T, NumOfTypes()>&>(*this)[ToSizeT(id)];
+        }
+
+        typename std::array<T, NumOfTypes()>::reference at(Id id)
+        {
+                if (ToSizeT(id) >= NumOfTypes()) {
+                        throw std::out_of_range("ERGMContactType::IdSubscriptArray::at> Id out of range");
+                }
+                return static_cast<std::array<T, NumOfTypes()>&>(*this)[ToSizeT(id)];
+        }
+
+        typename std::array<T, NumOfTypes()>::const_reference at(Id id) const
+        {
+                if (ToSizeT(id) >= NumOfTypes()) {
+                        throw std::out_of_range("ERGMContactType::IdSubscriptArray::at> Id out of range");
+                }
+                return static_cast<const std::array<T, NumOfTypes()>&>(*this)[ToSizeT(id)];
+        }
+};
+
+} // namespace ERGMContactType
+
 } // namespace stride

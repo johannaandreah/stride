@@ -56,15 +56,15 @@ public:
 
 public:
         /// Default construction (for population vector).
-        Person() :  m_id(0), m_age(0.0), m_profession(0), m_pool_ids(), m_vaccine(), m_individual_contact_factor(1.0), m_health(), m_in_pools(), m_is_participant(),
+        Person() :  m_id(0), m_age(0.0), m_sex(0), m_profession(0), m_pool_ids(), m_vaccine(), m_individual_contact_factor(1.0), m_health(), m_in_pools(), m_is_participant(),
 		m_is_tracing_index(false), m_contact_tracing_list(),
         m_isolated(false), m_events() {}
 
         /// Constructor: set the person data.
-        Person(unsigned int id, float age, unsigned int profession, unsigned int householdId, unsigned int k12SchoolId,unsigned int workplaceId, unsigned int CommunityWeekendId, unsigned int CommunityWeekdayId, 
-         unsigned int householdClusterId,
-			   unsigned int collectivityId)
-            : m_id(id), m_age(age), m_profession(profession), m_pool_ids{householdId,
+        Person(unsigned int id, float age, unsigned int sex, unsigned int profession, unsigned int householdId,
+               unsigned int k12SchoolId, unsigned int workplaceId, unsigned int CommunityWeekendId,
+               unsigned int CommunityWeekdayId, unsigned int householdClusterId, unsigned int collectivityId)
+            : m_id(id), m_age(age), m_sex(sex), m_profession(profession), m_pool_ids{householdId,
           k12SchoolId,
           workplaceId,
           CommunityWeekendId,
@@ -83,6 +83,9 @@ public:
 
         /// Get the age.
         float GetAge() const { return m_age; }
+
+        /// Get the sex.
+        unsigned int GetSex() const { return m_sex; }
 
         /// Get the profession
         unsigned int GetProfession() const { return m_profession; }
@@ -199,6 +202,7 @@ private:
 private:
         unsigned int m_id;  ///< The id.
         float        m_age; ///< The age.
+        unsigned int m_sex; ///< The sex category.
         unsigned int m_profession; ///< The profession (worker, other, teacher)
 
         ///< Ids (school, work, etc) of pools you belong to Id value 0 means you do not belong to any
