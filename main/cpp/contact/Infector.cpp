@@ -97,6 +97,22 @@ inline void RegisterContact (const std::shared_ptr<spdlog::logger>& logger, cons
 										 p2->GetHealth().IsSymptomatic());
 }
 
+inline void RegisterContactIs(const std::shared_ptr<spdlog::logger>& logger, const Person* p1, const Person* p2,
+                              ContactType::Id type, unsigned short int sim_day, const double cProb, const double tProb)
+{
+        logger->info("[CONT_IS] {} {} {} {} {} {} {} {} {} {} {} {} {} {} {} {}",
+                     p1->GetId(), p1->GetAge(), p2->GetId(), p2->GetAge(),
+                     static_cast<unsigned int>(type == ContactType::Id::Household),
+                     static_cast<unsigned int>(type == ContactType::Id::School),
+                     static_cast<unsigned int>(type == ContactType::Id::Workplace),
+                     static_cast<unsigned int>(type == ContactType::Id::CommunityWeekend),
+                     static_cast<unsigned int>(type == ContactType::Id::CommunityWeekday),
+                     static_cast<unsigned int>(type == ContactType::Id::HouseholdCluster),
+                     static_cast<unsigned int>(type == ContactType::Id::Collectivity),
+                     sim_day, cProb, tProb,
+                     p1->GetHealth().IsSymptomatic(), p2->GetHealth().IsSymptomatic());
+}
+
 /// Primary LOG_POLICY policy, implements EventLogMode::None.
 /// \tparam LL
 template <EventLogMode::Id LL>
@@ -105,6 +121,12 @@ class LOG_POLICY
 public:
         static void Contact(const std::shared_ptr<spdlog::logger>&, const Person*, const Person*, ContactType::Id,
                             unsigned short int, const double, const double)
+        {
+        }
+
+        static void ContactInfectiousSusceptible(const std::shared_ptr<spdlog::logger>&, const Person*,
+                                                 const Person*, ContactType::Id, unsigned short int, const double,
+                                                 const double)
         {
         }
 
@@ -123,6 +145,12 @@ class LOG_POLICY<EventLogMode::Id::Incidence>
 public:
         static void Contact(const std::shared_ptr<spdlog::logger>&, const Person*, const Person*, ContactType::Id,
                             unsigned short int, const double, const double)
+        {
+        }
+
+        static void ContactInfectiousSusceptible(const std::shared_ptr<spdlog::logger>&, const Person*,
+                                                 const Person*, ContactType::Id, unsigned short int, const double,
+                                                 const double)
         {
         }
 
@@ -148,6 +176,15 @@ public:
         {
         }
 
+        static void ContactInfectiousSusceptible(const std::shared_ptr<spdlog::logger>& logger, const Person* p1,
+                                                 const Person* p2, ContactType::Id type, unsigned short int sim_day,
+                                                 const double cProb, const double tProb)
+        {
+                //if (p1->IsSurveyParticipant() || p2->IsSurveyParticipant()) {
+                        RegisterContactIs(logger, p1, p2, type, sim_day, cProb, tProb);
+                //}
+        }
+
         // p1: infector & p2:infectee
         static void Trans(const std::shared_ptr<spdlog::logger>& logger, const Person* p1, const Person* p2,
                           ContactType::Id type, unsigned short int sim_day, unsigned int id_index_case, const double pVentilation, bool airborne)
@@ -171,6 +208,15 @@ public:
                }
         }
 
+        static void ContactInfectiousSusceptible(const std::shared_ptr<spdlog::logger>& logger, const Person* p1,
+                                                 const Person* p2, ContactType::Id type, unsigned short int sim_day,
+                                                 const double cProb, const double tProb)
+        {
+                //if (p1->IsSurveyParticipant() || p2->IsSurveyParticipant()) {
+                        RegisterContactIs(logger, p1, p2, type, sim_day, cProb, tProb);
+                //}
+        }
+
         static void Trans(const std::shared_ptr<spdlog::logger>& logger, const Person* p1, const Person* p2,
                           ContactType::Id type, unsigned short int sim_day, unsigned int id_index_case, const double pVentilation, bool airborne)
         {
@@ -190,6 +236,13 @@ public:
                             ContactType::Id type, unsigned short int sim_day, const double cProb, const double tProb)
         {
             RegisterContact(logger,p1,p2,type,sim_day,cProb,tProb);
+        }
+
+        static void ContactInfectiousSusceptible(const std::shared_ptr<spdlog::logger>& logger, const Person* p1,
+                                                 const Person* p2, ContactType::Id type, unsigned short int sim_day,
+                                                 const double cProb, const double tProb)
+        {
+                RegisterContactIs(logger, p1, p2, type, sim_day, cProb, tProb);
         }
 
         static void Trans(const std::shared_ptr<spdlog::logger>& logger, const Person* p1, const Person* p2,
@@ -413,6 +466,14 @@ void Infector<LL, TO>::Exec(ContactPool& pool, const AgeContactProfile& profile,
                                 auto& h1 = p1->GetHealth();
                                 auto& h2 = p2->GetHealth();
 
+                                if (h1.IsInfectious() && h2.IsSusceptible()) {
+                                        LP::ContactInfectiousSusceptible(eventLogger, p1, p2, pType, simDay, cProb,
+                                                                         tProb_p1_p2);
+                                } else if (h2.IsInfectious() && h1.IsSusceptible()) {
+                                        LP::ContactInfectiousSusceptible(eventLogger, p2, p1, pType, simDay, cProb,
+                                                                         tProb_p2_p1);
+                                }
+
                 					// if h1 infectious, account for susceptibility of p2
 								if (h1.IsInfectious() && h2.IsSusceptible() &&
 									rn.Binomial(tProb_p1_p2)) {
@@ -574,19 +635,42 @@ void Infector<LL, true>::Exec(ContactPool& pool, const AgeContactProfile& profil
                                 } else {
                                         vProb = 1;
                                 }
-                                if (rn.Binomial(cProb_p1, tProb_p1_p2, vProb)) {
 
+
+                                if (rn.Binomial(cProb_p1,vProb)) {
+								
+                                	// log contact
+								// for log policy Participants: if person 1 is participating in survey
+                                	//LP::Contact(eventLogger, p1, p2, pType, simDay, cProb, tProb_p1_p2);
+                                	// log contact
+                                        // for log policy Participants: if person 1 is participating in survey
+                                	//LP::Contact(eventLogger, p2, p1, pType, simDay, cProb, tProb_p2_p1);
+
+                                        // if track&trace is in place, option to register (both) contact(s)
+                                        //p1->RegisterContact(p2);
+                                        //p2->RegisterContact(p1);
+
+                                        // transmission & infection.
+                                        // note: no tertiary infections with TIC; so mark new case as 'recovered'
                                         auto& h2 = p2->GetHealth();
-                                        if (h1.IsInfectious() && h2.IsSusceptible()) {
-                                                double rel_inf = transProfile.GetIndividualInfectiousness(rn);
-                                                h2.StartInfection(h1.GetIdIndexCase(),p1->GetId(), rel_inf);
 
-                                                // if track&trace is in place, option to register (both) contact(s)
-                                                p1->RegisterContact(p2); //TODO: make use of "log policy" template
+                                        if (h2.IsSusceptible()) {
+                                                LP::ContactInfectiousSusceptible(eventLogger, p1, p2, pType, simDay, cProb_p1,
+                                                                                tProb_p1_p2);
+                                        
+                                                if (rn.Binomial(tProb_p1_p2)) {
 
-                                                LP::Trans(eventLogger, p1, p2, pType, simDay, h1.GetIdIndexCase(), pVentilation, false);
+                                                        double rel_inf = transProfile.GetIndividualInfectiousness(rn);
+                                                        h2.StartInfection(h1.GetIdIndexCase(),p1->GetId(), rel_inf);
+
+                                                        // if track&trace is in place, option to register (both) contact(s)
+                                                        p1->RegisterContact(p2); //TODO: make use of "log policy" template
+
+                                                        LP::Trans(eventLogger, p1, p2, pType, simDay, h1.GetIdIndexCase(), pVentilation, false);
+                                                }
                                         }
                                 }
+                                
                         }
                 }
         }

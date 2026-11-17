@@ -175,8 +175,9 @@ plot_contact_matrix_socrates <- function(data_cnt,data_part,figure_title,age_cat
                                               "cnt_community_weekend","cnt_community_weekday","part_sympt","cnt_sympt" )])
   
   # get socialmixr 'survey' object
-  survey_rstride <- survey(participants = db_participants,
-                           contacts     = db_contacts)
+  survey_rstride <- as_contact_survey(x=list(participants = db_participants,
+                                            contacts     = db_contacts))
+
 
   # get matrix
   suppressWarnings(

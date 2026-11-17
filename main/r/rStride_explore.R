@@ -43,16 +43,20 @@ dir_postfix <- '_explore'
 # add default parameters and values
 exp_param_list <- get_covid19_default_param()
 
+exp_param_list$population_file <- 'data/pop_belgium100k_c500_teachers_censushh_w_sex.csv'
+exp_param_list$age_contact_matrix_file_ergm <- 'data/contact_matrix_ergm.xml'
+exp_param_list$use_ergm_contact_matrix <- FALSE
+exp_param_list$household_contact_probability <- 0.7806638
+
 # change population file
-exp_param_list$population_file <- 'data/pop_belgium600k_c500_teachers_censushh.csv'
+#exp_param_list$population_file <- 'data/pop_belgium600k_c500_teachers_censushh.csv'
 #exp_param_list$population_file <- 'data/pop_belgium1000k_c500_teachers_censushh.csv'
 
 # change parameters and values to combine in a full-factorial grid
 exp_param_list$num_days <- 300
 exp_param_list$num_parallel_workers <- 8
 #exp_param_list$event_log_level <- c("Incidence")
-exp_param_list$event_log_level <- c("Transmissions")
-exp_param_list$num_rng_seeds <- 2
+exp_param_list$num_rng_seeds <- 10
  
 exp_param_list$distancing_workplace_ratio    <- c_str(exp_param_list$distancing_workplace_ratio,0.2)
 exp_param_list$distancing_workplace_date     <- c_str(exp_param_list$distancing_workplace_date,'2020-09-01')

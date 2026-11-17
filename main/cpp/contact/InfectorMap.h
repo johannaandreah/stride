@@ -43,11 +43,11 @@ public:
         {
                 using namespace EventLogMode;
 
-                this->emplace(Id::None, &Infector<Id::None>::Exec);
-                this->emplace(Id::Incidence, &Infector<Id::Incidence>::Exec);
-                this->emplace(Id::Transmissions, &Infector<Id::Transmissions>::Exec);
-                this->emplace(Id::Participants, &Infector<Id::Participants>::Exec);
-                this->emplace(Id::All, &Infector<Id::All>::Exec);
+                this->emplace(EventLogMode::Id::None, &Infector<EventLogMode::Id::None>::Exec);
+                this->emplace(EventLogMode::Id::Incidence, &Infector<EventLogMode::Id::Incidence>::Exec);
+                this->emplace(EventLogMode::Id::Transmissions, &Infector<EventLogMode::Id::Transmissions>::Exec);
+                this->emplace(EventLogMode::Id::Participants, &Infector<EventLogMode::Id::Participants>::Exec);
+                this->emplace(EventLogMode::Id::All, &Infector<EventLogMode::Id::All>::Exec);
         }
 };
 

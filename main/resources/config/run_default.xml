@@ -5,6 +5,7 @@
     <event_output_file>true</event_output_file>
     <disease_config_file>data/disease_measles_adaptive_behavior.xml</disease_config_file>
     <holidays_file>data/holidays_none.csv</holidays_file>
+    <household_contact_probability>0.999</household_contact_probability>
 	<immunity_profile>None</immunity_profile>
     <immunity_rate>0.8</immunity_rate>
     <num_days>50</num_days>
