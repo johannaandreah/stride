@@ -84,7 +84,8 @@ public:
         				 util::Rn& rn, unsigned short int simDay, std::shared_ptr<spdlog::logger> eventLogger,
 						 std::shared_ptr<Population> population, double m_cnt_intensity_householdCluster,
                          double pType_distancing_factor, unsigned short int dayWeek, bool m_airborne_transmission, bool m_subpools_community, double ventilation_factor,
-                         ContactProbabilityRule::Id contact_probability_rule);
+                         ContactProbabilityRule::Id contact_probability_rule,
+                         double household_contact_probability);
 };
 
 /// Time-optimized version (For None || Transmission logging).
@@ -99,7 +100,8 @@ public:
         				 util::Rn& rn, unsigned short int simDay, std::shared_ptr<spdlog::logger> eventLogger,
 						 std::shared_ptr<Population> population, double m_cnt_intensity_householdCluster,
                          double pType_distancing_factor, unsigned short int dayWeek, bool m_airborne_transmission, bool m_subpools_community, double ventilation_factor,
-                         ContactProbabilityRule::Id contact_probability_rule);
+                         ContactProbabilityRule::Id contact_probability_rule,
+                         double household_contact_probability);
 };
 
 /// Explicit instantiations in cpp file.

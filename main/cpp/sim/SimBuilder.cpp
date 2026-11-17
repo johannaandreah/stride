@@ -97,6 +97,7 @@ shared_ptr<Sim> SimBuilder::Build(shared_ptr<Sim> sim, shared_ptr<Population> po
         // committed disease-file R0 calibration was fitted under. Changing it requires a refit.
         sim->m_contact_probability_rule      = ContactProbabilityRule::ToRule(
                                                    m_config.get<string>("run.contact_probability_rule", "Min"));
+        sim->m_household_contact_probability = m_config.get<double>("run.household_contact_probability", 0.999);
         // TO DO!!! test only airborne transmission if subpools community!!!
         sim->m_num_threads                   = m_config.get<unsigned int>("run.num_threads");
         unsigned int num_days                = m_config.get<unsigned short>("run.num_days");

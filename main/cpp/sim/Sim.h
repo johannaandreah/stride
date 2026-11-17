@@ -98,6 +98,7 @@ private:
         TransmissionProfile         m_transmission_profile; ///< Profile of disease.
 
         ContactProbabilityRule::Id  m_contact_probability_rule; ///< Rule combining both age-specific contact probabilities.
+        double                      m_household_contact_probability; ///< Contact probability used for non-ERGM household contacts.
 
         // temporary...
         bool                        m_is_isolated_from_household;
