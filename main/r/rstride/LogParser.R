@@ -104,7 +104,8 @@ parse_event_logfile <- function(event_logfile,exp_id,
                              'start_symptoms',
                              'end_symptoms',
                              'hospital_admission_start',
-                             'hospital_admission_end')
+                             'hospital_admission_end',
+                             'household_size')
   } else {
     header_transm       <- c('local_id', 'infector_id','part_age',
                              'infector_age','pool_type','sim_day','id_index_case',
@@ -112,10 +113,15 @@ parse_event_logfile <- function(event_logfile,exp_id,
                              'hospital_admission_start',
                              'hospital_admission_end',
                              'infector_is_symptomatic','part_rel_infectiousness','part_rel_susceptibility',
-                             'fctor_ventilation','is_airborne')
+                             'fctor_ventilation','is_airborne','infector_household_size','part_household_size')
   }
   
   rstride_out$data_transmission  <- reformat_log_data(event_logfile = event_logfile,
+                                                      data_log_cat  = data_log_cat,
+                                                      log_cat       = c("PRIM","TRAN","TRAN_M"),
+                                                      colnames_all  = header_transm,
+                                                      exp_id        = exp_id)
+  rstride_out$data_transmission_copy  <- reformat_log_data(event_logfile = event_logfile,
                                                       data_log_cat  = data_log_cat,
                                                       log_cat       = c("PRIM","TRAN","TRAN_M"),
                                                       colnames_all  = header_transm,
@@ -146,13 +152,20 @@ parse_event_logfile <- function(event_logfile,exp_id,
   ###################### # 
   header_cnt          <- c('local_id', 'part_age', 'cnt_id','cnt_age', 'cnt_home', 'cnt_school', 
                            'cnt_workplace', 'cnt_community_weekend', 'cnt_community_weekday', 'cnt_household_cluster', 'cnt_collectivity',
-                           'sim_day', 'cnt_prob', 'trm_prob','part_sympt','cnt_sympt')
+                           'sim_day', 'cnt_prob', 'trm_prob','part_sympt','cnt_sympt',
+                           'part_household_size','cnt_household_size')
 
   rstride_out$data_contacts <- reformat_log_data(event_logfile = event_logfile,
                                                  data_log_cat  = data_log_cat,
                                                  log_cat       = "CONT",
                                                  colnames_all  = header_cnt,
                                                  exp_id        = exp_id)
+
+  rstride_out$data_contacts_is <- reformat_log_data(event_logfile = event_logfile,
+                                                     data_log_cat  = data_log_cat,
+                                                     log_cat       = "CONT_IS",
+                                                     colnames_all  = header_cnt,
+                                                     exp_id        = exp_id)
 
   
   ###################### #

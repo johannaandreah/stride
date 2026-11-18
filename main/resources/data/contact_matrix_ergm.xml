@@ -14,19 +14,19 @@
         </contact>
         <contact>
           <age>3</age>
-          <rate>0.00315457413249211</rate>
+          <rate>0</rate>
         </contact>
         <contact>
           <age>4</age>
-          <rate>0.141955835962145</rate>
+          <rate>0.138576779026217</rate>
         </contact>
         <contact>
           <age>5</age>
-          <rate>0.697160883280757</rate>
+          <rate>0.689138576779026</rate>
         </contact>
         <contact>
           <age>6</age>
-          <rate>0.10410094637224</rate>
+          <rate>0.108614232209738</rate>
         </contact>
         <contact>
           <age>7</age>
@@ -43,27 +43,27 @@
         </contact>
         <contact>
           <age>2</age>
-          <rate>0.00508905852417303</rate>
-        </contact>
-        <contact>
-          <age>3</age>
           <rate>0</rate>
         </contact>
         <contact>
+          <age>3</age>
+          <rate>0.00267379679144385</rate>
+        </contact>
+        <contact>
           <age>4</age>
-          <rate>0.00508905852417303</rate>
+          <rate>0.00267379679144385</rate>
         </contact>
         <contact>
           <age>5</age>
-          <rate>0.814249363867684</rate>
+          <rate>0.796791443850267</rate>
         </contact>
         <contact>
           <age>6</age>
-          <rate>0.099236641221374</rate>
+          <rate>0.0828877005347594</rate>
         </contact>
         <contact>
           <age>7</age>
-          <rate>0.00763358778625954</rate>
+          <rate>0.00267379679144385</rate>
         </contact>
       </contacts>
     </participant>
@@ -72,31 +72,31 @@
       <contacts>
         <contact>
           <age>1</age>
-          <rate>0.00232018561484919</rate>
-        </contact>
-        <contact>
-          <age>2</age>
           <rate>0</rate>
         </contact>
         <contact>
+          <age>2</age>
+          <rate>0.0024330900243309</rate>
+        </contact>
+        <contact>
           <age>3</age>
-          <rate>0.00928074245939675</rate>
+          <rate>0</rate>
         </contact>
         <contact>
           <age>4</age>
-          <rate>0.0162412993039443</rate>
+          <rate>0.0194647201946472</rate>
         </contact>
         <contact>
           <age>5</age>
-          <rate>0.647331786542923</rate>
+          <rate>0.671532846715328</rate>
         </contact>
         <contact>
           <age>6</age>
-          <rate>0.136890951276102</rate>
+          <rate>0.1338199513382</rate>
         </contact>
         <contact>
           <age>7</age>
-          <rate>0.0208816705336427</rate>
+          <rate>0.0340632603406326</rate>
         </contact>
       </contacts>
     </participant>
@@ -105,31 +105,31 @@
       <contacts>
         <contact>
           <age>1</age>
-          <rate>0.0348837209302326</rate>
+          <rate>0.0343866171003717</rate>
         </contact>
         <contact>
           <age>2</age>
-          <rate>0.00155038759689922</rate>
+          <rate>0.000929368029739777</rate>
         </contact>
         <contact>
           <age>3</age>
-          <rate>0.00542635658914729</rate>
+          <rate>0.00743494423791822</rate>
         </contact>
         <contact>
           <age>4</age>
-          <rate>0.192248062015504</rate>
+          <rate>0.111524163568773</rate>
         </contact>
         <contact>
           <age>5</age>
-          <rate>0.22093023255814</rate>
+          <rate>0.276022304832714</rate>
         </contact>
         <contact>
           <age>6</age>
-          <rate>0.232558139534884</rate>
+          <rate>0.247211895910781</rate>
         </contact>
         <contact>
           <age>7</age>
-          <rate>0.0333333333333333</rate>
+          <rate>0.0315985130111524</rate>
         </contact>
       </contacts>
     </participant>
@@ -138,31 +138,31 @@
       <contacts>
         <contact>
           <age>1</age>
-          <rate>0.0328282828282828</rate>
+          <rate>0.0279975654290931</rate>
         </contact>
         <contact>
           <age>2</age>
-          <rate>0.047534165181224</rate>
+          <rate>0.0453438831405965</rate>
         </contact>
         <contact>
           <age>3</age>
-          <rate>0.0414438502673797</rate>
+          <rate>0.0419963481436397</rate>
         </contact>
         <contact>
           <age>4</age>
-          <rate>0.0423351158645276</rate>
+          <rate>0.0451917224589166</rate>
         </contact>
         <contact>
           <age>5</age>
-          <rate>0.0267379679144385</rate>
+          <rate>0.0307364576993305</rate>
         </contact>
         <contact>
           <age>6</age>
-          <rate>0.51455733808675</rate>
+          <rate>0.526780279975654</rate>
         </contact>
         <contact>
           <age>7</age>
-          <rate>0.123143196672608</rate>
+          <rate>0.117772367620207</rate>
         </contact>
       </contacts>
     </participant>
@@ -171,31 +171,31 @@
       <contacts>
         <contact>
           <age>1</age>
-          <rate>0.00564295485636115</rate>
+          <rate>0.00514275580776733</rate>
         </contact>
         <contact>
           <age>2</age>
-          <rate>0.00666894664842681</rate>
+          <rate>0.00549742862209612</rate>
         </contact>
         <contact>
           <age>3</age>
-          <rate>0.0100889192886457</rate>
+          <rate>0.0097535023940415</rate>
         </contact>
         <contact>
           <age>4</age>
-          <rate>0.0512995896032832</rate>
+          <rate>0.047171484305728</rate>
         </contact>
         <contact>
           <age>5</age>
-          <rate>0.59233926128591</rate>
+          <rate>0.613938641603121</rate>
         </contact>
         <contact>
           <age>6</age>
-          <rate>0.0266757865937072</rate>
+          <rate>0.0273098067033162</rate>
         </contact>
         <contact>
           <age>7</age>
-          <rate>0.0897742818057456</rate>
+          <rate>0.0762546550806881</rate>
         </contact>
       </contacts>
     </participant>
@@ -208,27 +208,27 @@
         </contact>
         <contact>
           <age>2</age>
-          <rate>0.000245921796868596</rate>
+          <rate>7.76940408670655e-05</rate>
         </contact>
         <contact>
           <age>3</age>
-          <rate>0.000737765390605787</rate>
+          <rate>0.00108771657213892</rate>
         </contact>
         <contact>
           <age>4</age>
-          <rate>0.00352487908844987</rate>
+          <rate>0.00264159738948023</rate>
         </contact>
         <contact>
           <age>5</age>
-          <rate>0.067956389868022</rate>
+          <rate>0.0601351876311087</rate>
         </contact>
         <contact>
           <age>6</age>
-          <rate>0.0430363144520043</rate>
+          <rate>0.0334084375728382</rate>
         </contact>
         <contact>
           <age>7</age>
-          <rate>0.573489630297565</rate>
+          <rate>0.592028591407039</rate>
         </contact>
       </contacts>
     </participant>
@@ -239,31 +239,31 @@
       <contacts>
         <contact>
           <age>1</age>
-          <rate>0.073993471164309</rate>
+          <rate>0.0559270516717325</rate>
         </contact>
         <contact>
           <age>2</age>
-          <rate>0.0620239390642002</rate>
+          <rate>0.0620060790273556</rate>
         </contact>
         <contact>
           <age>3</age>
-          <rate>0.0136017410228509</rate>
+          <rate>0.00851063829787234</rate>
         </contact>
         <contact>
           <age>4</age>
-          <rate>0.140914036996736</rate>
+          <rate>0.10516717325228</rate>
         </contact>
         <contact>
           <age>5</age>
-          <rate>0.848204570184984</rate>
+          <rate>0.887537993920973</rate>
         </contact>
         <contact>
           <age>6</age>
-          <rate>0.745919477693145</rate>
+          <rate>0.785410334346505</rate>
         </contact>
         <contact>
           <age>7</age>
-          <rate>0.00272034820457019</rate>
+          <rate>0.00364741641337386</rate>
         </contact>
       </contacts>
     </participant>
@@ -272,31 +272,31 @@
       <contacts>
         <contact>
           <age>1</age>
-          <rate>0.0899763220205209</rate>
+          <rate>0.0793774319066148</rate>
         </contact>
         <contact>
           <age>2</age>
-          <rate>0.176795580110497</rate>
+          <rate>0.186770428015564</rate>
         </contact>
         <contact>
           <age>3</age>
-          <rate>0.0962904498816101</rate>
+          <rate>0.0926070038910506</rate>
         </contact>
         <contact>
           <age>4</age>
-          <rate>0.0197316495659037</rate>
+          <rate>0.0171206225680934</rate>
         </contact>
         <contact>
           <age>5</age>
-          <rate>0.896606156274665</rate>
+          <rate>0.898054474708171</rate>
         </contact>
         <contact>
           <age>6</age>
-          <rate>0.514601420678769</rate>
+          <rate>0.536186770428016</rate>
         </contact>
         <contact>
           <age>7</age>
-          <rate>0.0126282557221784</rate>
+          <rate>0.0116731517509728</rate>
         </contact>
       </contacts>
     </participant>
@@ -305,31 +305,31 @@
       <contacts>
         <contact>
           <age>1</age>
-          <rate>0.0192901234567901</rate>
+          <rate>0.0114566284779051</rate>
         </contact>
         <contact>
           <age>2</age>
-          <rate>0.0941358024691358</rate>
+          <rate>0.0973813420621931</rate>
         </contact>
         <contact>
           <age>3</age>
-          <rate>0.152777777777778</rate>
+          <rate>0.1620294599018</rate>
         </contact>
         <contact>
           <age>4</age>
-          <rate>0.0771604938271605</rate>
+          <rate>0.0793780687397709</rate>
         </contact>
         <contact>
           <age>5</age>
-          <rate>0.768518518518518</rate>
+          <rate>0.774959083469722</rate>
         </contact>
         <contact>
           <age>6</age>
-          <rate>0.39429012345679</rate>
+          <rate>0.401800327332242</rate>
         </contact>
         <contact>
           <age>7</age>
-          <rate>0.0524691358024691</rate>
+          <rate>0.0466448445171849</rate>
         </contact>
       </contacts>
     </participant>
@@ -338,31 +338,31 @@
       <contacts>
         <contact>
           <age>1</age>
-          <rate>0.141684901531729</rate>
+          <rate>0.0993111366245695</rate>
         </contact>
         <contact>
           <age>2</age>
-          <rate>0.0136761487964989</rate>
+          <rate>0.0126291618828932</rate>
         </contact>
         <contact>
           <age>3</age>
-          <rate>0.0547045951859956</rate>
+          <rate>0.055683122847302</rate>
         </contact>
         <contact>
           <age>4</age>
-          <rate>0.103938730853392</rate>
+          <rate>0.0907003444316877</rate>
         </contact>
         <contact>
           <age>5</age>
-          <rate>0.514770240700219</rate>
+          <rate>0.510332950631458</rate>
         </contact>
         <contact>
           <age>6</age>
-          <rate>0.426695842450766</rate>
+          <rate>0.396670493685419</rate>
         </contact>
         <contact>
           <age>7</age>
-          <rate>0.109409190371991</rate>
+          <rate>0.117680826636051</rate>
         </contact>
       </contacts>
     </participant>
@@ -371,31 +371,31 @@
       <contacts>
         <contact>
           <age>1</age>
-          <rate>0.270331194728628</rate>
+          <rate>0.249104248421771</rate>
         </contact>
         <contact>
           <age>2</age>
-          <rate>0.196982833362233</rate>
+          <rate>0.19689472786214</rate>
         </contact>
         <contact>
           <age>3</age>
-          <rate>0.172706779954916</rate>
+          <rate>0.161576522777683</rate>
         </contact>
         <contact>
           <age>4</age>
-          <rate>0.16316975897347</rate>
+          <rate>0.151680600580106</rate>
         </contact>
         <contact>
           <age>5</age>
-          <rate>0.0527137159701751</rate>
+          <rate>0.0638116362395496</rate>
         </contact>
         <contact>
           <age>6</age>
-          <rate>0.693254725160395</rate>
+          <rate>0.699709947108002</rate>
         </contact>
         <contact>
           <age>7</age>
-          <rate>0.0922490029478065</rate>
+          <rate>0.0955468350110903</rate>
         </contact>
       </contacts>
     </participant>
@@ -404,31 +404,31 @@
       <contacts>
         <contact>
           <age>1</age>
-          <rate>0.257658334899455</rate>
+          <rate>0.239259259259259</rate>
         </contact>
         <contact>
           <age>2</age>
-          <rate>0.12253335839128</rate>
+          <rate>0.127592592592593</rate>
         </contact>
         <contact>
           <age>3</age>
-          <rate>0.0960345799661718</rate>
+          <rate>0.0909259259259259</rate>
         </contact>
         <contact>
           <age>4</age>
-          <rate>0.146588987032513</rate>
+          <rate>0.127962962962963</rate>
         </contact>
         <contact>
           <age>5</age>
-          <rate>0.751362525841007</rate>
+          <rate>0.759444444444444</rate>
         </contact>
         <contact>
           <age>6</age>
-          <rate>0.0575079872204473</rate>
+          <rate>0.07</rate>
         </contact>
         <contact>
           <age>7</age>
-          <rate>0.0819394850591994</rate>
+          <rate>0.0887037037037037</rate>
         </contact>
       </contacts>
     </participant>
@@ -437,31 +437,31 @@
       <contacts>
         <contact>
           <age>1</age>
-          <rate>0.00267236771779797</rate>
+          <rate>0.0029513034923758</rate>
         </contact>
         <contact>
           <age>2</age>
-          <rate>0.0085515766969535</rate>
+          <rate>0.0073782587309395</rate>
         </contact>
         <contact>
           <age>3</age>
-          <rate>0.0363442009620524</rate>
+          <rate>0.0280373831775701</rate>
         </contact>
         <contact>
           <age>4</age>
-          <rate>0.106894708711919</rate>
+          <rate>0.100836202656173</rate>
         </contact>
         <contact>
           <age>5</age>
-          <rate>0.284339925173704</rate>
+          <rate>0.275454992621741</rate>
         </contact>
         <contact>
           <age>6</age>
-          <rate>0.233030464991983</rate>
+          <rate>0.235612395474668</rate>
         </contact>
         <contact>
           <age>7</age>
-          <rate>0.440406199893105</rate>
+          <rate>0.431874077717659</rate>
         </contact>
       </contacts>
     </participant>
@@ -472,31 +472,31 @@
       <contacts>
         <contact>
           <age>1</age>
-          <rate>0.623470122390209</rate>
+          <rate>0.567804024496938</rate>
         </contact>
         <contact>
           <age>2</age>
-          <rate>0.294456443484521</rate>
+          <rate>0.347769028871391</rate>
         </contact>
         <contact>
           <age>3</age>
-          <rate>0.031317494600432</rate>
+          <rate>0.0358705161854768</rate>
         </contact>
         <contact>
           <age>4</age>
-          <rate>0.0705543556515479</rate>
+          <rate>0.0625546806649169</rate>
         </contact>
         <contact>
           <age>5</age>
-          <rate>0.949244060475162</rate>
+          <rate>0.954943132108486</rate>
         </contact>
         <contact>
           <age>6</age>
-          <rate>0.891288696904248</rate>
+          <rate>0.889326334208224</rate>
         </contact>
         <contact>
           <age>7</age>
-          <rate>0.013678905687545</rate>
+          <rate>0.0131233595800525</rate>
         </contact>
       </contacts>
     </participant>
@@ -505,31 +505,31 @@
       <contacts>
         <contact>
           <age>1</age>
-          <rate>0.276631721339195</rate>
+          <rate>0.263681592039801</rate>
         </contact>
         <contact>
           <age>2</age>
-          <rate>0.469394656746703</rate>
+          <rate>0.469651741293532</rate>
         </contact>
         <contact>
           <age>3</age>
-          <rate>0.197497463645587</rate>
+          <rate>0.193366500829187</rate>
         </contact>
         <contact>
           <age>4</age>
-          <rate>0.0209671964829219</rate>
+          <rate>0.0228855721393035</rate>
         </contact>
         <contact>
           <age>5</age>
-          <rate>0.936422049374366</rate>
+          <rate>0.944941956882255</rate>
         </contact>
         <contact>
           <age>6</age>
-          <rate>0.823131552248901</rate>
+          <rate>0.822885572139303</rate>
         </contact>
         <contact>
           <age>7</age>
-          <rate>0.0142035847142374</rate>
+          <rate>0.0139303482587065</rate>
         </contact>
       </contacts>
     </participant>
@@ -538,31 +538,31 @@
       <contacts>
         <contact>
           <age>1</age>
-          <rate>0.0344827586206897</rate>
+          <rate>0.0325526002381898</rate>
         </contact>
         <contact>
           <age>2</age>
-          <rate>0.231470471660721</rate>
+          <rate>0.231441048034935</rate>
         </contact>
         <contact>
           <age>3</age>
-          <rate>0.318668252080856</rate>
+          <rate>0.29614926558158</rate>
         </contact>
         <contact>
           <age>4</age>
-          <rate>0.150614347998415</rate>
+          <rate>0.166335847558555</rate>
         </contact>
         <contact>
           <age>5</age>
-          <rate>0.798652397938962</rate>
+          <rate>0.811036125446606</rate>
         </contact>
         <contact>
           <age>6</age>
-          <rate>0.660721363456203</rate>
+          <rate>0.662167526796348</rate>
         </contact>
         <contact>
           <age>7</age>
-          <rate>0.0253666270313119</rate>
+          <rate>0.0222310440651052</rate>
         </contact>
       </contacts>
     </participant>
@@ -571,31 +571,31 @@
       <contacts>
         <contact>
           <age>1</age>
-          <rate>0.0972222222222222</rate>
+          <rate>0.0654462242562929</rate>
         </contact>
         <contact>
           <age>2</age>
-          <rate>0.0307539682539683</rate>
+          <rate>0.0315789473684211</rate>
         </contact>
         <contact>
           <age>3</age>
-          <rate>0.188492063492063</rate>
+          <rate>0.191762013729977</rate>
         </contact>
         <contact>
           <age>4</age>
-          <rate>0.211309523809524</rate>
+          <rate>0.220594965675057</rate>
         </contact>
         <contact>
           <age>5</age>
-          <rate>0.562996031746032</rate>
+          <rate>0.580778032036613</rate>
         </contact>
         <contact>
           <age>6</age>
-          <rate>0.543650793650794</rate>
+          <rate>0.544622425629291</rate>
         </contact>
         <contact>
           <age>7</age>
-          <rate>0.0659722222222222</rate>
+          <rate>0.0640732265446224</rate>
         </contact>
       </contacts>
     </participant>
@@ -604,31 +604,31 @@
       <contacts>
         <contact>
           <age>1</age>
-          <rate>0.487610946745562</rate>
+          <rate>0.394898697539797</rate>
         </contact>
         <contact>
           <age>2</age>
-          <rate>0.512019230769231</rate>
+          <rate>0.515376266280753</rate>
         </contact>
         <contact>
           <age>3</age>
-          <rate>0.372596153846154</rate>
+          <rate>0.369573082489146</rate>
         </contact>
         <contact>
           <age>4</age>
-          <rate>0.20987426035503</rate>
+          <rate>0.229558610709117</rate>
         </contact>
         <contact>
           <age>5</age>
-          <rate>0.0510355029585799</rate>
+          <rate>0.073082489146165</rate>
         </contact>
         <contact>
           <age>6</age>
-          <rate>0.844489644970414</rate>
+          <rate>0.843885672937771</rate>
         </contact>
         <contact>
           <age>7</age>
-          <rate>0.0434541420118343</rate>
+          <rate>0.047575976845152</rate>
         </contact>
       </contacts>
     </participant>
@@ -637,31 +637,31 @@
       <contacts>
         <contact>
           <age>1</age>
-          <rate>0.46885059647794</rate>
+          <rate>0.37731997030438</rate>
         </contact>
         <contact>
           <age>2</age>
-          <rate>0.460897557280818</rate>
+          <rate>0.460467706013363</rate>
         </contact>
         <contact>
           <age>3</age>
-          <rate>0.315659912895285</rate>
+          <rate>0.309576837416481</rate>
         </contact>
         <contact>
           <age>4</age>
-          <rate>0.207536451429653</rate>
+          <rate>0.220861172976986</rate>
         </contact>
         <contact>
           <age>5</age>
-          <rate>0.86479833364893</rate>
+          <rate>0.865812917594655</rate>
         </contact>
         <contact>
           <age>6</age>
-          <rate>0.042416209051316</rate>
+          <rate>0.0504825538233111</rate>
         </contact>
         <contact>
           <age>7</age>
-          <rate>0.0285930694944139</rate>
+          <rate>0.0285820341499629</rate>
         </contact>
       </contacts>
     </participant>
@@ -670,31 +670,31 @@
       <contacts>
         <contact>
           <age>1</age>
-          <rate>0.0831509846827133</rate>
+          <rate>0.0601202404809619</rate>
         </contact>
         <contact>
           <age>2</age>
-          <rate>0.0919037199124726</rate>
+          <rate>0.0841683366733467</rate>
         </contact>
         <contact>
           <age>3</age>
-          <rate>0.140043763676149</rate>
+          <rate>0.112224448897796</rate>
         </contact>
         <contact>
           <age>4</age>
-          <rate>0.291028446389497</rate>
+          <rate>0.280561122244489</rate>
         </contact>
         <contact>
           <age>5</age>
-          <rate>0.514223194748359</rate>
+          <rate>0.527054108216433</rate>
         </contact>
         <contact>
           <age>6</age>
-          <rate>0.330415754923414</rate>
+          <rate>0.308617234468938</rate>
         </contact>
         <contact>
           <age>7</age>
-          <rate>0.332603938730853</rate>
+          <rate>0.336673346693387</rate>
         </contact>
       </contacts>
     </participant>
@@ -705,31 +705,31 @@
       <contacts>
         <contact>
           <age>1</age>
-          <rate>0.855291576673866</rate>
+          <rate>0.674676524953789</rate>
         </contact>
         <contact>
           <age>2</age>
-          <rate>0.803455723542117</rate>
+          <rate>0.932532347504621</rate>
         </contact>
         <contact>
           <age>3</age>
-          <rate>0.154067674586033</rate>
+          <rate>0.158040665434381</rate>
         </contact>
         <contact>
           <age>4</age>
-          <rate>0.0914326853851692</rate>
+          <rate>0.0878003696857671</rate>
         </contact>
         <contact>
           <age>5</age>
-          <rate>0.992080633549316</rate>
+          <rate>1.01201478743068</rate>
         </contact>
         <contact>
           <age>6</age>
-          <rate>0.915766738660907</rate>
+          <rate>0.925138632162662</rate>
         </contact>
         <contact>
           <age>7</age>
-          <rate>0.0539956803455724</rate>
+          <rate>0.055452865064695</rate>
         </contact>
       </contacts>
     </participant>
@@ -738,31 +738,31 @@
       <contacts>
         <contact>
           <age>1</age>
-          <rate>0.534738859607092</rate>
+          <rate>0.482313575525813</rate>
         </contact>
         <contact>
           <age>2</age>
-          <rate>0.779108768567321</rate>
+          <rate>0.79923518164436</rate>
         </contact>
         <contact>
           <age>3</age>
-          <rate>0.395783421178725</rate>
+          <rate>0.390057361376673</rate>
         </contact>
         <contact>
           <age>4</age>
-          <rate>0.0584571154767609</rate>
+          <rate>0.0659655831739962</rate>
         </contact>
         <contact>
           <age>5</age>
-          <rate>0.967896502156205</rate>
+          <rate>0.970363288718929</rate>
         </contact>
         <contact>
           <age>6</age>
-          <rate>0.875419262098706</rate>
+          <rate>0.868068833652008</rate>
         </contact>
         <contact>
           <age>7</age>
-          <rate>0.0311451844753234</rate>
+          <rate>0.0434990439770555</rate>
         </contact>
       </contacts>
     </participant>
@@ -771,31 +771,31 @@
       <contacts>
         <contact>
           <age>1</age>
-          <rate>0.125513196480938</rate>
+          <rate>0.0989583333333333</rate>
         </contact>
         <contact>
           <age>2</age>
-          <rate>0.484457478005865</rate>
+          <rate>0.472222222222222</rate>
         </contact>
         <contact>
           <age>3</age>
-          <rate>0.496187683284458</rate>
+          <rate>0.469907407407407</rate>
         </contact>
         <contact>
           <age>4</age>
-          <rate>0.235777126099707</rate>
+          <rate>0.263888888888889</rate>
         </contact>
         <contact>
           <age>5</age>
-          <rate>0.831671554252199</rate>
+          <rate>0.80787037037037</rate>
         </contact>
         <contact>
           <age>6</age>
-          <rate>0.698533724340176</rate>
+          <rate>0.693865740740741</rate>
         </contact>
         <contact>
           <age>7</age>
-          <rate>0.0463343108504399</rate>
+          <rate>0.0509259259259259</rate>
         </contact>
       </contacts>
     </participant>
@@ -804,31 +804,31 @@
       <contacts>
         <contact>
           <age>1</age>
-          <rate>0.115875912408759</rate>
+          <rate>0.076</rate>
         </contact>
         <contact>
           <age>2</age>
-          <rate>0.111313868613139</rate>
+          <rate>0.1104</rate>
         </contact>
         <contact>
           <age>3</age>
-          <rate>0.366788321167883</rate>
+          <rate>0.3648</rate>
         </contact>
         <contact>
           <age>4</age>
-          <rate>0.343065693430657</rate>
+          <rate>0.328</rate>
         </contact>
         <contact>
           <age>5</age>
-          <rate>0.599452554744526</rate>
+          <rate>0.6224</rate>
         </contact>
         <contact>
           <age>6</age>
-          <rate>0.579379562043796</rate>
+          <rate>0.596</rate>
         </contact>
         <contact>
           <age>7</age>
-          <rate>0.0958029197080292</rate>
+          <rate>0.0976</rate>
         </contact>
       </contacts>
     </participant>
@@ -837,31 +837,31 @@
       <contacts>
         <contact>
           <age>1</age>
-          <rate>0.585138004246284</rate>
+          <rate>0.456440183409754</rate>
         </contact>
         <contact>
           <age>2</age>
-          <rate>0.857749469214437</rate>
+          <rate>0.846185910796165</rate>
         </contact>
         <contact>
           <age>3</age>
-          <rate>0.602123142250531</rate>
+          <rate>0.581909128803668</rate>
         </contact>
         <contact>
           <age>4</age>
-          <rate>0.278980891719745</rate>
+          <rate>0.324301792413506</rate>
         </contact>
         <contact>
           <age>5</age>
-          <rate>0.0917197452229299</rate>
+          <rate>0.11671529804085</rate>
         </contact>
         <contact>
           <age>6</age>
-          <rate>0.898513800424628</rate>
+          <rate>0.904960400166736</rate>
         </contact>
         <contact>
           <age>7</age>
-          <rate>0.0806794055201698</rate>
+          <rate>0.090454355981659</rate>
         </contact>
       </contacts>
     </participant>
@@ -870,31 +870,31 @@
       <contacts>
         <contact>
           <age>1</age>
-          <rate>0.555701179554391</rate>
+          <rate>0.426683716965047</rate>
         </contact>
         <contact>
           <age>2</age>
-          <rate>0.798165137614679</rate>
+          <rate>0.774083546462063</rate>
         </contact>
         <contact>
           <age>3</age>
-          <rate>0.520314547837484</rate>
+          <rate>0.511082693947144</rate>
         </contact>
         <contact>
           <age>4</age>
-          <rate>0.27741371778069</rate>
+          <rate>0.317561807331628</rate>
         </contact>
         <contact>
           <age>5</age>
-          <rate>0.924421144604631</rate>
+          <rate>0.92540494458653</rate>
         </contact>
         <contact>
           <age>6</age>
-          <rate>0.0768894713848842</rate>
+          <rate>0.0878090366581415</rate>
         </contact>
         <contact>
           <age>7</age>
-          <rate>0.055045871559633</rate>
+          <rate>0.0673486786018755</rate>
         </contact>
       </contacts>
     </participant>
@@ -903,31 +903,31 @@
       <contacts>
         <contact>
           <age>1</age>
-          <rate>0.301204819277108</rate>
+          <rate>0.21978021978022</rate>
         </contact>
         <contact>
           <age>2</age>
-          <rate>0.261044176706827</rate>
+          <rate>0.333333333333333</rate>
         </contact>
         <contact>
           <age>3</age>
-          <rate>0.317269076305221</rate>
+          <rate>0.322344322344322</rate>
         </contact>
         <contact>
           <age>4</age>
-          <rate>0.421686746987952</rate>
+          <rate>0.446886446886447</rate>
         </contact>
         <contact>
           <age>5</age>
-          <rate>0.763052208835341</rate>
+          <rate>0.794871794871795</rate>
         </contact>
         <contact>
           <age>6</age>
-          <rate>0.506024096385542</rate>
+          <rate>0.578754578754579</rate>
         </contact>
         <contact>
           <age>7</age>
-          <rate>0.232931726907631</rate>
+          <rate>0.271062271062271</rate>
         </contact>
       </contacts>
     </participant>
@@ -938,31 +938,31 @@
       <contacts>
         <contact>
           <age>1</age>
-          <rate>0.895939086294416</rate>
+          <rate>0.722741433021807</rate>
         </contact>
         <contact>
           <age>2</age>
-          <rate>1.22842639593909</rate>
+          <rate>1.29283489096573</rate>
         </contact>
         <contact>
           <age>3</age>
-          <rate>0.388324873096447</rate>
+          <rate>0.411214953271028</rate>
         </contact>
         <contact>
           <age>4</age>
-          <rate>0.166243654822335</rate>
+          <rate>0.182242990654206</rate>
         </contact>
         <contact>
           <age>5</age>
-          <rate>1.07868020304569</rate>
+          <rate>1.101246105919</rate>
         </contact>
         <contact>
           <age>6</age>
-          <rate>1.001269035533</rate>
+          <rate>0.996884735202492</rate>
         </contact>
         <contact>
           <age>7</age>
-          <rate>0.0888324873096447</rate>
+          <rate>0.105919003115265</rate>
         </contact>
       </contacts>
     </participant>
@@ -971,31 +971,31 @@
       <contacts>
         <contact>
           <age>1</age>
-          <rate>0.729464958553127</rate>
+          <rate>0.6484375</rate>
         </contact>
         <contact>
           <age>2</age>
-          <rate>0.972117558402411</rate>
+          <rate>0.9671875</rate>
         </contact>
         <contact>
           <age>3</age>
-          <rate>0.729464958553127</rate>
+          <rate>0.78203125</rate>
         </contact>
         <contact>
           <age>4</age>
-          <rate>0.113036925395629</rate>
+          <rate>0.134375</rate>
         </contact>
         <contact>
           <age>5</age>
-          <rate>1.01431801055011</rate>
+          <rate>1.015625</rate>
         </contact>
         <contact>
           <age>6</age>
-          <rate>0.908063300678222</rate>
+          <rate>0.91484375</rate>
         </contact>
         <contact>
           <age>7</age>
-          <rate>0.0851544837980407</rate>
+          <rate>0.0953125</rate>
         </contact>
       </contacts>
     </participant>
@@ -1004,31 +1004,31 @@
       <contacts>
         <contact>
           <age>1</age>
-          <rate>0.272727272727273</rate>
+          <rate>0.229166666666667</rate>
         </contact>
         <contact>
           <age>2</age>
-          <rate>0.862745098039216</rate>
+          <rate>0.868923611111111</rate>
         </contact>
         <contact>
           <age>3</age>
-          <rate>0.616755793226382</rate>
+          <rate>0.720486111111111</rate>
         </contact>
         <contact>
           <age>4</age>
-          <rate>0.346702317290553</rate>
+          <rate>0.331597222222222</rate>
         </contact>
         <contact>
           <age>5</age>
-          <rate>0.877896613190731</rate>
+          <rate>0.907118055555556</rate>
         </contact>
         <contact>
           <age>6</age>
-          <rate>0.77807486631016</rate>
+          <rate>0.801215277777778</rate>
         </contact>
         <contact>
           <age>7</age>
-          <rate>0.0926916221033868</rate>
+          <rate>0.1015625</rate>
         </contact>
       </contacts>
     </participant>
@@ -1037,31 +1037,31 @@
       <contacts>
         <contact>
           <age>1</age>
-          <rate>0.189855072463768</rate>
+          <rate>0.151750972762646</rate>
         </contact>
         <contact>
           <age>2</age>
-          <rate>0.217391304347826</rate>
+          <rate>0.223086900129702</rate>
         </contact>
         <contact>
           <age>3</age>
-          <rate>0.563768115942029</rate>
+          <rate>0.495460440985733</rate>
         </contact>
         <contact>
           <age>4</age>
-          <rate>0.536231884057971</rate>
+          <rate>0.518806744487678</rate>
         </contact>
         <contact>
           <age>5</age>
-          <rate>0.672463768115942</rate>
+          <rate>0.745784695201038</rate>
         </contact>
         <contact>
           <age>6</age>
-          <rate>0.67536231884058</rate>
+          <rate>0.702983138780804</rate>
         </contact>
         <contact>
           <age>7</age>
-          <rate>0.152173913043478</rate>
+          <rate>0.151750972762646</rate>
         </contact>
       </contacts>
     </participant>
@@ -1070,31 +1070,31 @@
       <contacts>
         <contact>
           <age>1</age>
-          <rate>0.707154742096506</rate>
+          <rate>0.578086672117743</rate>
         </contact>
         <contact>
           <age>2</age>
-          <rate>1.1198003327787</rate>
+          <rate>1.06295993458708</rate>
         </contact>
         <contact>
           <age>3</age>
-          <rate>0.819467554076539</rate>
+          <rate>0.854456255110384</rate>
         </contact>
         <contact>
           <age>4</age>
-          <rate>0.386023294509151</rate>
+          <rate>0.470155355682747</rate>
         </contact>
         <contact>
           <age>5</age>
-          <rate>0.19134775374376</rate>
+          <rate>0.222403924775143</rate>
         </contact>
         <contact>
           <age>6</age>
-          <rate>1.00499168053245</rate>
+          <rate>1.01962387571545</rate>
         </contact>
         <contact>
           <age>7</age>
-          <rate>0.14891846921797</rate>
+          <rate>0.16516762060507</rate>
         </contact>
       </contacts>
     </participant>
@@ -1103,31 +1103,31 @@
       <contacts>
         <contact>
           <age>1</age>
-          <rate>0.664700926705981</rate>
+          <rate>0.522875816993464</rate>
         </contact>
         <contact>
           <age>2</age>
-          <rate>1.01516427969671</rate>
+          <rate>0.956699346405229</rate>
         </contact>
         <contact>
           <age>3</age>
-          <rate>0.735467565290649</rate>
+          <rate>0.754084967320261</rate>
         </contact>
         <contact>
           <age>4</age>
-          <rate>0.392586352148273</rate>
+          <rate>0.44281045751634</rate>
         </contact>
         <contact>
           <age>5</age>
-          <rate>1.01769165964617</rate>
+          <rate>1.0187908496732</rate>
         </contact>
         <contact>
           <age>6</age>
-          <rate>0.146588037068239</rate>
+          <rate>0.168300653594771</rate>
         </contact>
         <contact>
           <age>7</age>
-          <rate>0.117944397641112</rate>
+          <rate>0.127450980392157</rate>
         </contact>
       </contacts>
     </participant>
@@ -1136,31 +1136,31 @@
       <contacts>
         <contact>
           <age>1</age>
-          <rate>0.330188679245283</rate>
+          <rate>0.288135593220339</rate>
         </contact>
         <contact>
           <age>2</age>
-          <rate>0.533018867924528</rate>
+          <rate>0.516949152542373</rate>
         </contact>
         <contact>
           <age>3</age>
-          <rate>0.490566037735849</rate>
+          <rate>0.495762711864407</rate>
         </contact>
         <contact>
           <age>4</age>
-          <rate>0.495283018867925</rate>
+          <rate>0.495762711864407</rate>
         </contact>
         <contact>
           <age>5</age>
-          <rate>0.844339622641509</rate>
+          <rate>0.85593220338983</rate>
         </contact>
         <contact>
           <age>6</age>
-          <rate>0.660377358490566</rate>
+          <rate>0.661016949152542</rate>
         </contact>
         <contact>
           <age>7</age>
-          <rate>0.60377358490566</rate>
+          <rate>0.491525423728814</rate>
         </contact>
       </contacts>
     </participant>
@@ -1183,15 +1183,15 @@
         </contact>
         <contact>
           <age>4</age>
-          <rate>0.151419558359621</rate>
+          <rate>0.134831460674157</rate>
         </contact>
         <contact>
           <age>5</age>
-          <rate>0.694006309148265</rate>
+          <rate>0.685393258426966</rate>
         </contact>
         <contact>
           <age>6</age>
-          <rate>0.107255520504732</rate>
+          <rate>0.108614232209738</rate>
         </contact>
         <contact>
           <age>7</age>
@@ -1208,27 +1208,27 @@
         </contact>
         <contact>
           <age>2</age>
-          <rate>0.00508905852417303</rate>
-        </contact>
-        <contact>
-          <age>3</age>
           <rate>0</rate>
         </contact>
         <contact>
+          <age>3</age>
+          <rate>0.00267379679144385</rate>
+        </contact>
+        <contact>
           <age>4</age>
-          <rate>0.00508905852417303</rate>
+          <rate>0.00267379679144385</rate>
         </contact>
         <contact>
           <age>5</age>
-          <rate>0.806615776081425</rate>
+          <rate>0.810160427807487</rate>
         </contact>
         <contact>
           <age>6</age>
-          <rate>0.10941475826972</rate>
+          <rate>0.0909090909090909</rate>
         </contact>
         <contact>
           <age>7</age>
-          <rate>0.00508905852417303</rate>
+          <rate>0</rate>
         </contact>
       </contacts>
     </participant>
@@ -1241,27 +1241,27 @@
         </contact>
         <contact>
           <age>2</age>
-          <rate>0</rate>
+          <rate>0.0024330900243309</rate>
         </contact>
         <contact>
           <age>3</age>
-          <rate>0.00928074245939675</rate>
+          <rate>0</rate>
         </contact>
         <contact>
           <age>4</age>
-          <rate>0.0185614849187935</rate>
+          <rate>0.0194647201946472</rate>
         </contact>
         <contact>
           <age>5</age>
-          <rate>0.624129930394432</rate>
+          <rate>0.627737226277372</rate>
         </contact>
         <contact>
           <age>6</age>
-          <rate>0.153132250580046</rate>
+          <rate>0.13625304136253</rate>
         </contact>
         <contact>
           <age>7</age>
-          <rate>0.0301624129930394</rate>
+          <rate>0.0389294403892944</rate>
         </contact>
       </contacts>
     </participant>
@@ -1270,31 +1270,31 @@
       <contacts>
         <contact>
           <age>1</age>
-          <rate>0.0372093023255814</rate>
+          <rate>0.033457249070632</rate>
         </contact>
         <contact>
           <age>2</age>
-          <rate>0.00155038759689922</rate>
+          <rate>0.000929368029739777</rate>
         </contact>
         <contact>
           <age>3</age>
-          <rate>0.0062015503875969</rate>
+          <rate>0.00743494423791822</rate>
         </contact>
         <contact>
           <age>4</age>
-          <rate>0.184496124031008</rate>
+          <rate>0.130111524163569</rate>
         </contact>
         <contact>
           <age>5</age>
-          <rate>0.231007751937985</rate>
+          <rate>0.25185873605948</rate>
         </contact>
         <contact>
           <age>6</age>
-          <rate>0.222480620155039</rate>
+          <rate>0.245353159851301</rate>
         </contact>
         <contact>
           <age>7</age>
-          <rate>0.0302325581395349</rate>
+          <rate>0.0269516728624535</rate>
         </contact>
       </contacts>
     </participant>
@@ -1303,31 +1303,31 @@
       <contacts>
         <contact>
           <age>1</age>
-          <rate>0.0326797385620915</rate>
+          <rate>0.0278454047474133</rate>
         </contact>
         <contact>
           <age>2</age>
-          <rate>0.04708853238265</rate>
+          <rate>0.0461046865489957</rate>
         </contact>
         <contact>
           <age>3</age>
-          <rate>0.0399584076054664</rate>
+          <rate>0.0392574558734023</rate>
         </contact>
         <contact>
           <age>4</age>
-          <rate>0.0442661913250149</rate>
+          <rate>0.0412355447352404</rate>
         </contact>
         <contact>
           <age>5</age>
-          <rate>0.02465834818776</rate>
+          <rate>0.0276932440657334</rate>
         </contact>
         <contact>
           <age>6</age>
-          <rate>0.509803921568627</rate>
+          <rate>0.519933049300061</rate>
         </contact>
         <contact>
           <age>7</age>
-          <rate>0.115864527629234</rate>
+          <rate>0.112294583079732</rate>
         </contact>
       </contacts>
     </participant>
@@ -1336,31 +1336,31 @@
       <contacts>
         <contact>
           <age>1</age>
-          <rate>0.00581395348837209</rate>
+          <rate>0.00514275580776733</rate>
         </contact>
         <contact>
           <age>2</age>
-          <rate>0.00735294117647059</rate>
+          <rate>0.00602943784358929</rate>
         </contact>
         <contact>
           <age>3</age>
-          <rate>0.0112859097127223</rate>
+          <rate>0.00993083880120589</rate>
         </contact>
         <contact>
           <age>4</age>
-          <rate>0.0490766073871409</rate>
+          <rate>0.0468168114913992</rate>
         </contact>
         <contact>
           <age>5</age>
-          <rate>0.58686730506156</rate>
+          <rate>0.605958503280724</rate>
         </contact>
         <contact>
           <age>6</age>
-          <rate>0.0259917920656635</rate>
+          <rate>0.0237630785600284</rate>
         </contact>
         <contact>
           <age>7</age>
-          <rate>0.082421340629275</rate>
+          <rate>0.0723532541230715</rate>
         </contact>
       </contacts>
     </participant>
@@ -1373,27 +1373,27 @@
         </contact>
         <contact>
           <age>2</age>
-          <rate>0.000163947864579064</rate>
+          <rate>0</rate>
         </contact>
         <contact>
           <age>3</age>
-          <rate>0.00106566111976392</rate>
+          <rate>0.00124310465387305</rate>
         </contact>
         <contact>
           <age>4</age>
-          <rate>0.00319698335929175</rate>
+          <rate>0.0022531271851449</rate>
         </contact>
         <contact>
           <age>5</age>
-          <rate>0.0639396671858349</rate>
+          <rate>0.0573382021598943</rate>
         </contact>
         <contact>
           <age>6</age>
-          <rate>0.0395114353635544</rate>
+          <rate>0.0316991686737627</rate>
         </contact>
         <contact>
           <age>7</age>
-          <rate>0.551848512173129</rate>
+          <rate>0.561883303550618</rate>
         </contact>
       </contacts>
     </participant>
@@ -1404,31 +1404,31 @@
       <contacts>
         <contact>
           <age>1</age>
-          <rate>0.073993471164309</rate>
+          <rate>0.0571428571428571</rate>
         </contact>
         <contact>
           <age>2</age>
-          <rate>0.0609357997823721</rate>
+          <rate>0.0613981762917933</rate>
         </contact>
         <contact>
           <age>3</age>
-          <rate>0.0108813928182807</rate>
+          <rate>0.00851063829787234</rate>
         </contact>
         <contact>
           <age>4</age>
-          <rate>0.137105549510337</rate>
+          <rate>0.106382978723404</rate>
         </contact>
         <contact>
           <age>5</age>
-          <rate>0.856909684439608</rate>
+          <rate>0.880851063829787</rate>
         </contact>
         <contact>
           <age>6</age>
-          <rate>0.740478781284004</rate>
+          <rate>0.765957446808511</rate>
         </contact>
         <contact>
           <age>7</age>
-          <rate>0.00217627856365615</rate>
+          <rate>0.00182370820668693</rate>
         </contact>
       </contacts>
     </participant>
@@ -1437,31 +1437,31 @@
       <contacts>
         <contact>
           <age>1</age>
-          <rate>0.0883977900552486</rate>
+          <rate>0.0785992217898833</rate>
         </contact>
         <contact>
           <age>2</age>
-          <rate>0.161010260457774</rate>
+          <rate>0.15875486381323</rate>
         </contact>
         <contact>
           <age>3</age>
-          <rate>0.0915548539857932</rate>
+          <rate>0.0840466926070039</rate>
         </contact>
         <contact>
           <age>4</age>
-          <rate>0.0197316495659037</rate>
+          <rate>0.0186770428015564</rate>
         </contact>
         <contact>
           <age>5</age>
-          <rate>0.871349644830308</rate>
+          <rate>0.867704280155642</rate>
         </contact>
         <contact>
           <age>6</age>
-          <rate>0.499605367008682</rate>
+          <rate>0.513618677042802</rate>
         </contact>
         <contact>
           <age>7</age>
-          <rate>0.00868192580899763</rate>
+          <rate>0.0147859922178988</rate>
         </contact>
       </contacts>
     </participant>
@@ -1470,31 +1470,31 @@
       <contacts>
         <contact>
           <age>1</age>
-          <rate>0.0154320987654321</rate>
+          <rate>0.0114566284779051</rate>
         </contact>
         <contact>
           <age>2</age>
-          <rate>0.0895061728395062</rate>
+          <rate>0.088379705400982</rate>
         </contact>
         <contact>
           <age>3</age>
-          <rate>0.134259259259259</rate>
+          <rate>0.137479541734861</rate>
         </contact>
         <contact>
           <age>4</age>
-          <rate>0.0594135802469136</rate>
+          <rate>0.0703764320785597</rate>
         </contact>
         <contact>
           <age>5</age>
-          <rate>0.708333333333333</rate>
+          <rate>0.711947626841244</rate>
         </contact>
         <contact>
           <age>6</age>
-          <rate>0.364969135802469</rate>
+          <rate>0.368248772504092</rate>
         </contact>
         <contact>
           <age>7</age>
-          <rate>0.0501543209876543</rate>
+          <rate>0.044189852700491</rate>
         </contact>
       </contacts>
     </participant>
@@ -1503,31 +1503,31 @@
       <contacts>
         <contact>
           <age>1</age>
-          <rate>0.137855579868709</rate>
+          <rate>0.100459242250287</rate>
         </contact>
         <contact>
           <age>2</age>
-          <rate>0.0136761487964989</rate>
+          <rate>0.0137772675086108</rate>
         </contact>
         <contact>
           <age>3</age>
-          <rate>0.0421225382932166</rate>
+          <rate>0.0493685419058553</rate>
         </contact>
         <contact>
           <age>4</age>
-          <rate>0.0984682713347921</rate>
+          <rate>0.0907003444316877</rate>
         </contact>
         <contact>
           <age>5</age>
-          <rate>0.450765864332604</rate>
+          <rate>0.506888633754305</rate>
         </contact>
         <contact>
           <age>6</age>
-          <rate>0.37472647702407</rate>
+          <rate>0.368541905855339</rate>
         </contact>
         <contact>
           <age>7</age>
-          <rate>0.107221006564551</rate>
+          <rate>0.11308840413318</rate>
         </contact>
       </contacts>
     </participant>
@@ -1536,31 +1536,31 @@
       <contacts>
         <contact>
           <age>1</age>
-          <rate>0.273105600832322</rate>
+          <rate>0.247227435591196</rate>
         </contact>
         <contact>
           <age>2</age>
-          <rate>0.191434021154847</rate>
+          <rate>0.19024057328101</rate>
         </contact>
         <contact>
           <age>3</age>
-          <rate>0.15918155019941</rate>
+          <rate>0.148438832963658</rate>
         </contact>
         <contact>
           <age>4</age>
-          <rate>0.142881914340212</rate>
+          <rate>0.150656884490701</rate>
         </contact>
         <contact>
           <age>5</age>
-          <rate>0.0502861106294434</rate>
+          <rate>0.0617642040607405</rate>
         </contact>
         <contact>
           <age>6</age>
-          <rate>0.663776660308653</rate>
+          <rate>0.659102542228289</rate>
         </contact>
         <contact>
           <age>7</age>
-          <rate>0.0814981792959945</rate>
+          <rate>0.0815560484558949</rate>
         </contact>
       </contacts>
     </participant>
@@ -1569,31 +1569,31 @@
       <contacts>
         <contact>
           <age>1</age>
-          <rate>0.255778988911859</rate>
+          <rate>0.233333333333333</rate>
         </contact>
         <contact>
           <age>2</age>
-          <rate>0.118962601014847</rate>
+          <rate>0.122222222222222</rate>
         </contact>
         <contact>
           <age>3</age>
-          <rate>0.0888930652133058</rate>
+          <rate>0.0833333333333333</rate>
         </contact>
         <contact>
           <age>4</age>
-          <rate>0.128735200150348</rate>
+          <rate>0.118888888888889</rate>
         </contact>
         <contact>
           <age>5</age>
-          <rate>0.71941364405187</rate>
+          <rate>0.71537037037037</rate>
         </contact>
         <contact>
           <age>6</age>
-          <rate>0.0473595188874272</rate>
+          <rate>0.0588888888888889</rate>
         </contact>
         <contact>
           <age>7</age>
-          <rate>0.0727306897199775</rate>
+          <rate>0.0811111111111111</rate>
         </contact>
       </contacts>
     </participant>
@@ -1602,31 +1602,31 @@
       <contacts>
         <contact>
           <age>1</age>
-          <rate>0.00213789417423838</rate>
+          <rate>0.0014756517461879</rate>
         </contact>
         <contact>
           <age>2</age>
-          <rate>0.00587920897915553</rate>
+          <rate>0.00934579439252336</rate>
         </contact>
         <contact>
           <age>3</age>
-          <rate>0.0347407803313736</rate>
+          <rate>0.0265617314313822</rate>
         </contact>
         <contact>
           <age>4</age>
-          <rate>0.10475681453768</rate>
+          <rate>0.0969011313330054</rate>
         </contact>
         <contact>
           <age>5</age>
-          <rate>0.251202565473009</rate>
+          <rate>0.235120511559272</rate>
         </contact>
         <contact>
           <age>6</age>
-          <rate>0.206841261357563</rate>
+          <rate>0.215445154943433</rate>
         </contact>
         <contact>
           <age>7</age>
-          <rate>0.375200427578835</rate>
+          <rate>0.413182488932612</rate>
         </contact>
       </contacts>
     </participant>
@@ -1637,31 +1637,31 @@
       <contacts>
         <contact>
           <age>1</age>
-          <rate>0.615550755939525</rate>
+          <rate>0.552055993000875</rate>
         </contact>
         <contact>
           <age>2</age>
-          <rate>0.289416846652268</rate>
+          <rate>0.33989501312336</rate>
         </contact>
         <contact>
           <age>3</age>
-          <rate>0.031317494600432</rate>
+          <rate>0.0336832895888014</rate>
         </contact>
         <contact>
           <age>4</age>
-          <rate>0.0698344132469402</rate>
+          <rate>0.0586176727909011</rate>
         </contact>
         <contact>
           <age>5</age>
-          <rate>0.94240460763139</rate>
+          <rate>0.953193350831146</rate>
         </contact>
         <contact>
           <age>6</age>
-          <rate>0.874370050395968</rate>
+          <rate>0.879265091863517</rate>
         </contact>
         <contact>
           <age>7</age>
-          <rate>0.0122390208783297</rate>
+          <rate>0.00962379702537183</rate>
         </contact>
       </contacts>
     </participant>
@@ -1670,31 +1670,31 @@
       <contacts>
         <contact>
           <age>1</age>
-          <rate>0.271897193101116</rate>
+          <rate>0.25771144278607</rate>
         </contact>
         <contact>
           <age>2</age>
-          <rate>0.433547514372675</rate>
+          <rate>0.443781094527363</rate>
         </contact>
         <contact>
           <age>3</age>
-          <rate>0.187013865404126</rate>
+          <rate>0.176782752902156</rate>
         </contact>
         <contact>
           <age>4</age>
-          <rate>0.0142035847142374</rate>
+          <rate>0.0208955223880597</rate>
         </contact>
         <contact>
           <age>5</age>
-          <rate>0.9239093676023</rate>
+          <rate>0.933001658374793</rate>
         </contact>
         <contact>
           <age>6</age>
-          <rate>0.805207981061887</rate>
+          <rate>0.816583747927031</rate>
         </contact>
         <contact>
           <age>7</age>
-          <rate>0.0145417653026716</rate>
+          <rate>0.0116086235489221</rate>
         </contact>
       </contacts>
     </participant>
@@ -1703,31 +1703,31 @@
       <contacts>
         <contact>
           <age>1</age>
-          <rate>0.0344827586206897</rate>
+          <rate>0.0305676855895196</rate>
         </contact>
         <contact>
           <age>2</age>
-          <rate>0.21918351169243</rate>
+          <rate>0.211591901548233</rate>
         </contact>
         <contact>
           <age>3</age>
-          <rate>0.260800634165676</rate>
+          <rate>0.254863040889242</rate>
         </contact>
         <contact>
           <age>4</age>
-          <rate>0.133174791914388</rate>
+          <rate>0.136959110758237</rate>
         </contact>
         <contact>
           <age>5</age>
-          <rate>0.743559254855331</rate>
+          <rate>0.730051607780865</rate>
         </contact>
         <contact>
           <age>6</age>
-          <rate>0.605231866825208</rate>
+          <rate>0.601429138547042</rate>
         </contact>
         <contact>
           <age>7</age>
-          <rate>0.0229885057471264</rate>
+          <rate>0.0262008733624454</rate>
         </contact>
       </contacts>
     </participant>
@@ -1736,31 +1736,31 @@
       <contacts>
         <contact>
           <age>1</age>
-          <rate>0.0962301587301587</rate>
+          <rate>0.0613272311212815</rate>
         </contact>
         <contact>
           <age>2</age>
-          <rate>0.0208333333333333</rate>
+          <rate>0.0288329519450801</rate>
         </contact>
         <contact>
           <age>3</age>
-          <rate>0.166666666666667</rate>
+          <rate>0.157894736842105</rate>
         </contact>
         <contact>
           <age>4</age>
-          <rate>0.192460317460317</rate>
+          <rate>0.197711670480549</rate>
         </contact>
         <contact>
           <age>5</age>
-          <rate>0.450892857142857</rate>
+          <rate>0.490160183066362</rate>
         </contact>
         <contact>
           <age>6</age>
-          <rate>0.438492063492063</rate>
+          <rate>0.45675057208238</rate>
         </contact>
         <contact>
           <age>7</age>
-          <rate>0.0634920634920635</rate>
+          <rate>0.0613272311212815</rate>
         </contact>
       </contacts>
     </participant>
@@ -1769,31 +1769,31 @@
       <contacts>
         <contact>
           <age>1</age>
-          <rate>0.484097633136095</rate>
+          <rate>0.39417510853835</rate>
         </contact>
         <contact>
           <age>2</age>
-          <rate>0.505177514792899</rate>
+          <rate>0.508863965267728</rate>
         </contact>
         <contact>
           <age>3</age>
-          <rate>0.34689349112426</rate>
+          <rate>0.33267004341534</rate>
         </contact>
         <contact>
           <age>4</age>
-          <rate>0.168084319526627</rate>
+          <rate>0.193740955137482</rate>
         </contact>
         <contact>
           <age>5</age>
-          <rate>0.047707100591716</rate>
+          <rate>0.0622286541244573</rate>
         </contact>
         <contact>
           <age>6</age>
-          <rate>0.806028106508876</rate>
+          <rate>0.804088277858176</rate>
         </contact>
         <contact>
           <age>7</age>
-          <rate>0.0362426035502959</rate>
+          <rate>0.0408827785817656</rate>
         </contact>
       </contacts>
     </participant>
@@ -1802,31 +1802,31 @@
       <contacts>
         <contact>
           <age>1</age>
-          <rate>0.459950766900208</rate>
+          <rate>0.373051224944321</rate>
         </contact>
         <contact>
           <age>2</age>
-          <rate>0.450861579246355</rate>
+          <rate>0.456941351150705</rate>
         </contact>
         <contact>
           <age>3</age>
-          <rate>0.289149782238212</rate>
+          <rate>0.281180400890869</rate>
         </contact>
         <contact>
           <age>4</age>
-          <rate>0.167392539291801</rate>
+          <rate>0.185226429101708</rate>
         </contact>
         <contact>
           <age>5</age>
-          <rate>0.825411853815565</rate>
+          <rate>0.824981440237565</rate>
         </contact>
         <contact>
           <age>6</age>
-          <rate>0.0374928990721454</rate>
+          <rate>0.0482553823311062</rate>
         </contact>
         <contact>
           <age>7</age>
-          <rate>0.0244271918197311</rate>
+          <rate>0.0241276911655531</rate>
         </contact>
       </contacts>
     </participant>
@@ -1835,31 +1835,31 @@
       <contacts>
         <contact>
           <age>1</age>
-          <rate>0.074398249452954</rate>
+          <rate>0.0440881763527054</rate>
         </contact>
         <contact>
           <age>2</age>
-          <rate>0.0940919037199125</rate>
+          <rate>0.0701402805611222</rate>
         </contact>
         <contact>
           <age>3</age>
-          <rate>0.12691466083151</rate>
+          <rate>0.132264529058116</rate>
         </contact>
         <contact>
           <age>4</age>
-          <rate>0.280087527352298</rate>
+          <rate>0.268537074148297</rate>
         </contact>
         <contact>
           <age>5</age>
-          <rate>0.428884026258206</rate>
+          <rate>0.452905811623247</rate>
         </contact>
         <contact>
           <age>6</age>
-          <rate>0.282275711159737</rate>
+          <rate>0.260521042084168</rate>
         </contact>
         <contact>
           <age>7</age>
-          <rate>0.231947483588621</rate>
+          <rate>0.30060120240481</rate>
         </contact>
       </contacts>
     </participant>
@@ -1870,31 +1870,31 @@
       <contacts>
         <contact>
           <age>1</age>
-          <rate>0.819294456443485</rate>
+          <rate>0.674676524953789</rate>
         </contact>
         <contact>
           <age>2</age>
-          <rate>0.789056875449964</rate>
+          <rate>0.914972273567468</rate>
         </contact>
         <contact>
           <age>3</age>
-          <rate>0.141108711303096</rate>
+          <rate>0.142329020332717</rate>
         </contact>
         <contact>
           <age>4</age>
-          <rate>0.0935925125989921</rate>
+          <rate>0.0813308687615527</rate>
         </contact>
         <contact>
           <age>5</age>
-          <rate>0.987041036717063</rate>
+          <rate>1.01571164510166</rate>
         </contact>
         <contact>
           <age>6</age>
-          <rate>0.897768178545716</rate>
+          <rate>0.907578558225508</rate>
         </contact>
         <contact>
           <age>7</age>
-          <rate>0.041036717062635</rate>
+          <rate>0.0471349353049908</rate>
         </contact>
       </contacts>
     </participant>
@@ -1903,31 +1903,31 @@
       <contacts>
         <contact>
           <age>1</age>
-          <rate>0.525155725922377</rate>
+          <rate>0.473231357552581</rate>
         </contact>
         <contact>
           <age>2</age>
-          <rate>0.741734547196933</rate>
+          <rate>0.763862332695985</rate>
         </contact>
         <contact>
           <age>3</age>
-          <rate>0.370867273598467</rate>
+          <rate>0.360420650095602</rate>
         </contact>
         <contact>
           <age>4</age>
-          <rate>0.0383325347388596</rate>
+          <rate>0.0521032504780115</rate>
         </contact>
         <contact>
           <age>5</age>
-          <rate>0.945855294681361</rate>
+          <rate>0.951720841300191</rate>
         </contact>
         <contact>
           <age>6</age>
-          <rate>0.837086727359847</rate>
+          <rate>0.841778202676864</rate>
         </contact>
         <contact>
           <age>7</age>
-          <rate>0.0277910876856732</rate>
+          <rate>0.0339388145315488</rate>
         </contact>
       </contacts>
     </participant>
@@ -1936,31 +1936,31 @@
       <contacts>
         <contact>
           <age>1</age>
-          <rate>0.114956011730205</rate>
+          <rate>0.0891203703703704</rate>
         </contact>
         <contact>
           <age>2</age>
-          <rate>0.453958944281525</rate>
+          <rate>0.436342592592593</rate>
         </contact>
         <contact>
           <age>3</age>
-          <rate>0.403519061583578</rate>
+          <rate>0.425925925925926</rate>
         </contact>
         <contact>
           <age>4</age>
-          <rate>0.195894428152493</rate>
+          <rate>0.214699074074074</rate>
         </contact>
         <contact>
           <age>5</age>
-          <rate>0.768328445747801</rate>
+          <rate>0.771990740740741</rate>
         </contact>
         <contact>
           <age>6</age>
-          <rate>0.621114369501466</rate>
+          <rate>0.625578703703704</rate>
         </contact>
         <contact>
           <age>7</age>
-          <rate>0.0451612903225806</rate>
+          <rate>0.0486111111111111</rate>
         </contact>
       </contacts>
     </participant>
@@ -1969,31 +1969,31 @@
       <contacts>
         <contact>
           <age>1</age>
-          <rate>0.118613138686131</rate>
+          <rate>0.0704</rate>
         </contact>
         <contact>
           <age>2</age>
-          <rate>0.072992700729927</rate>
+          <rate>0.0872</rate>
         </contact>
         <contact>
           <age>3</age>
-          <rate>0.304744525547445</rate>
+          <rate>0.2968</rate>
         </contact>
         <contact>
           <age>4</age>
-          <rate>0.268248175182482</rate>
+          <rate>0.2528</rate>
         </contact>
         <contact>
           <age>5</age>
-          <rate>0.497262773722628</rate>
+          <rate>0.5104</rate>
         </contact>
         <contact>
           <age>6</age>
-          <rate>0.477189781021898</rate>
+          <rate>0.488</rate>
         </contact>
         <contact>
           <age>7</age>
-          <rate>0.0885036496350365</rate>
+          <rate>0.092</rate>
         </contact>
       </contacts>
     </participant>
@@ -2002,31 +2002,31 @@
       <contacts>
         <contact>
           <age>1</age>
-          <rate>0.582165605095541</rate>
+          <rate>0.458107544810338</rate>
         </contact>
         <contact>
           <age>2</age>
-          <rate>0.838216560509554</rate>
+          <rate>0.829929137140475</rate>
         </contact>
         <contact>
           <age>3</age>
-          <rate>0.556263269639066</rate>
+          <rate>0.556065027094623</rate>
         </contact>
         <contact>
           <age>4</age>
-          <rate>0.231422505307856</rate>
+          <rate>0.26594414339308</rate>
         </contact>
         <contact>
           <age>5</age>
-          <rate>0.0789808917197452</rate>
+          <rate>0.0917048770320967</rate>
         </contact>
         <contact>
           <age>6</age>
-          <rate>0.876008492569002</rate>
+          <rate>0.865360566902876</rate>
         </contact>
         <contact>
           <age>7</age>
-          <rate>0.0726114649681529</rate>
+          <rate>0.0733639016256774</rate>
         </contact>
       </contacts>
     </participant>
@@ -2035,31 +2035,31 @@
       <contacts>
         <contact>
           <age>1</age>
-          <rate>0.544779379641765</rate>
+          <rate>0.418584825234442</rate>
         </contact>
         <contact>
           <age>2</age>
-          <rate>0.763215377894277</rate>
+          <rate>0.750639386189258</rate>
         </contact>
         <contact>
           <age>3</age>
-          <rate>0.46264744429882</rate>
+          <rate>0.46078431372549</rate>
         </contact>
         <contact>
           <age>4</age>
-          <rate>0.228484054172128</rate>
+          <rate>0.26001705029838</rate>
         </contact>
         <contact>
           <age>5</age>
-          <rate>0.901266928789865</rate>
+          <rate>0.884910485933504</rate>
         </contact>
         <contact>
           <age>6</age>
-          <rate>0.0698995194408038</rate>
+          <rate>0.0861040068201194</rate>
         </contact>
         <contact>
           <age>7</age>
-          <rate>0.0506771515945828</rate>
+          <rate>0.0498721227621483</rate>
         </contact>
       </contacts>
     </participant>
@@ -2068,31 +2068,31 @@
       <contacts>
         <contact>
           <age>1</age>
-          <rate>0.228915662650602</rate>
+          <rate>0.186813186813187</rate>
         </contact>
         <contact>
           <age>2</age>
-          <rate>0.232931726907631</rate>
+          <rate>0.26007326007326</rate>
         </contact>
         <contact>
           <age>3</age>
-          <rate>0.309236947791165</rate>
+          <rate>0.307692307692308</rate>
         </contact>
         <contact>
           <age>4</age>
-          <rate>0.389558232931727</rate>
+          <rate>0.421245421245421</rate>
         </contact>
         <contact>
           <age>5</age>
-          <rate>0.686746987951807</rate>
+          <rate>0.644688644688645</rate>
         </contact>
         <contact>
           <age>6</age>
-          <rate>0.465863453815261</rate>
+          <rate>0.428571428571429</rate>
         </contact>
         <contact>
           <age>7</age>
-          <rate>0.240963855421687</rate>
+          <rate>0.212454212454212</rate>
         </contact>
       </contacts>
     </participant>
@@ -2103,31 +2103,31 @@
       <contacts>
         <contact>
           <age>1</age>
-          <rate>0.890862944162436</rate>
+          <rate>0.728971962616822</rate>
         </contact>
         <contact>
           <age>2</age>
-          <rate>1.21700507614213</rate>
+          <rate>1.28504672897196</rate>
         </contact>
         <contact>
           <age>3</age>
-          <rate>0.33756345177665</rate>
+          <rate>0.389408099688474</rate>
         </contact>
         <contact>
           <age>4</age>
-          <rate>0.152284263959391</rate>
+          <rate>0.168224299065421</rate>
         </contact>
         <contact>
           <age>5</age>
-          <rate>1.0748730964467</rate>
+          <rate>1.09657320872274</rate>
         </contact>
         <contact>
           <age>6</age>
-          <rate>0.983502538071066</rate>
+          <rate>0.996884735202492</rate>
         </contact>
         <contact>
           <age>7</age>
-          <rate>0.0774111675126904</rate>
+          <rate>0.0996884735202492</rate>
         </contact>
       </contacts>
     </participant>
@@ -2136,31 +2136,31 @@
       <contacts>
         <contact>
           <age>1</age>
-          <rate>0.72268274302939</rate>
+          <rate>0.64453125</rate>
         </contact>
         <contact>
           <age>2</age>
-          <rate>0.958553127354936</rate>
+          <rate>0.896875</rate>
         </contact>
         <contact>
           <age>3</age>
-          <rate>0.653353428786737</rate>
+          <rate>0.69296875</rate>
         </contact>
         <contact>
           <age>4</age>
-          <rate>0.0904295403165034</rate>
+          <rate>0.090625</rate>
         </contact>
         <contact>
           <age>5</age>
-          <rate>0.991710625470987</rate>
+          <rate>0.99765625</rate>
         </contact>
         <contact>
           <age>6</age>
-          <rate>0.898266767143934</rate>
+          <rate>0.88359375</rate>
         </contact>
         <contact>
           <age>7</age>
-          <rate>0.0746043707611153</rate>
+          <rate>0.07734375</rate>
         </contact>
       </contacts>
     </participant>
@@ -2169,31 +2169,31 @@
       <contacts>
         <contact>
           <age>1</age>
-          <rate>0.237076648841355</rate>
+          <rate>0.217013888888889</rate>
         </contact>
         <contact>
           <age>2</age>
-          <rate>0.772727272727273</rate>
+          <rate>0.769965277777778</rate>
         </contact>
         <contact>
           <age>3</age>
-          <rate>0.552584670231729</rate>
+          <rate>0.600694444444444</rate>
         </contact>
         <contact>
           <age>4</age>
-          <rate>0.288770053475936</rate>
+          <rate>0.278645833333333</rate>
         </contact>
         <contact>
           <age>5</age>
-          <rate>0.83065953654189</rate>
+          <rate>0.822048611111111</rate>
         </contact>
         <contact>
           <age>6</age>
-          <rate>0.731729055258467</rate>
+          <rate>0.71875</rate>
         </contact>
         <contact>
           <age>7</age>
-          <rate>0.0962566844919786</rate>
+          <rate>0.0972222222222222</rate>
         </contact>
       </contacts>
     </participant>
@@ -2202,31 +2202,31 @@
       <contacts>
         <contact>
           <age>1</age>
-          <rate>0.173913043478261</rate>
+          <rate>0.140077821011673</rate>
         </contact>
         <contact>
           <age>2</age>
-          <rate>0.173913043478261</rate>
+          <rate>0.150453955901427</rate>
         </contact>
         <contact>
           <age>3</age>
-          <rate>0.469565217391304</rate>
+          <rate>0.416342412451362</rate>
         </contact>
         <contact>
           <age>4</age>
-          <rate>0.385507246376812</rate>
+          <rate>0.443579766536965</rate>
         </contact>
         <contact>
           <age>5</age>
-          <rate>0.601449275362319</rate>
+          <rate>0.574578469520104</rate>
         </contact>
         <contact>
           <age>6</age>
-          <rate>0.566666666666667</rate>
+          <rate>0.603112840466926</rate>
         </contact>
         <contact>
           <age>7</age>
-          <rate>0.149275362318841</rate>
+          <rate>0.150453955901427</rate>
         </contact>
       </contacts>
     </participant>
@@ -2235,31 +2235,31 @@
       <contacts>
         <contact>
           <age>1</age>
-          <rate>0.704658901830283</rate>
+          <rate>0.575633687653312</rate>
         </contact>
         <contact>
           <age>2</age>
-          <rate>1.09484193011647</rate>
+          <rate>1.04415372035977</rate>
         </contact>
         <contact>
           <age>3</age>
-          <rate>0.775374376039933</rate>
+          <rate>0.774325429272281</rate>
         </contact>
         <contact>
           <age>4</age>
-          <rate>0.345257903494176</rate>
+          <rate>0.362224039247751</rate>
         </contact>
         <contact>
           <age>5</age>
-          <rate>0.183028286189684</rate>
+          <rate>0.17988552739166</rate>
         </contact>
         <contact>
           <age>6</age>
-          <rate>0.984193011647255</rate>
+          <rate>0.993458708094849</rate>
         </contact>
         <contact>
           <age>7</age>
-          <rate>0.141430948419301</rate>
+          <rate>0.139002452984464</rate>
         </contact>
       </contacts>
     </participant>
@@ -2268,31 +2268,31 @@
       <contacts>
         <contact>
           <age>1</age>
-          <rate>0.65290648694187</rate>
+          <rate>0.522875816993464</rate>
         </contact>
         <contact>
           <age>2</age>
-          <rate>1.00421229991575</rate>
+          <rate>0.924019607843137</rate>
         </contact>
         <contact>
           <age>3</age>
-          <rate>0.691659646166807</rate>
+          <rate>0.676470588235294</rate>
         </contact>
         <contact>
           <age>4</age>
-          <rate>0.329401853411963</rate>
+          <rate>0.379901960784314</rate>
         </contact>
         <contact>
           <age>5</age>
-          <rate>0.996630160067397</rate>
+          <rate>0.99264705882353</rate>
         </contact>
         <contact>
           <age>6</age>
-          <rate>0.129738837405223</rate>
+          <rate>0.151960784313725</rate>
         </contact>
         <contact>
           <age>7</age>
-          <rate>0.108677337826453</rate>
+          <rate>0.0972222222222222</rate>
         </contact>
       </contacts>
     </participant>
@@ -2301,31 +2301,31 @@
       <contacts>
         <contact>
           <age>1</age>
-          <rate>0.287735849056604</rate>
+          <rate>0.271186440677966</rate>
         </contact>
         <contact>
           <age>2</age>
-          <rate>0.466981132075472</rate>
+          <rate>0.419491525423729</rate>
         </contact>
         <contact>
           <age>3</age>
-          <rate>0.509433962264151</rate>
+          <rate>0.474576271186441</rate>
         </contact>
         <contact>
           <age>4</age>
-          <rate>0.485849056603774</rate>
+          <rate>0.491525423728814</rate>
         </contact>
         <contact>
           <age>5</age>
-          <rate>0.80188679245283</rate>
+          <rate>0.720338983050847</rate>
         </contact>
         <contact>
           <age>6</age>
-          <rate>0.608490566037736</rate>
+          <rate>0.504237288135593</rate>
         </contact>
         <contact>
           <age>7</age>
-          <rate>0.471698113207547</rate>
+          <rate>0.415254237288136</rate>
         </contact>
       </contacts>
     </participant>
